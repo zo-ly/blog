@@ -324,11 +324,11 @@ article#post-excerpt {
       article#post-excerpt header a::after {
         position: absolute;
         bottom: 0;
-        left: 50%;
-        right: 50%;
+        left: 51%;
+        right: 51%;
         content: "";
         background: #34495e;
-        height: 2px;
+        height: 0.15rem;
         transition: all .3s; }
       article#post-excerpt header a:hover::after {
         left: 0;
