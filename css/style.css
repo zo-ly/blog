@@ -49,7 +49,7 @@ body {
   background: #eaeaea;
   color: #34495e;
   white-space: normal;
-  word-break: break-all; }
+  word-wrap: break-word; }
   body a {
     color: #34495e; }
 
@@ -831,9 +831,11 @@ footer {
   .post .mobile-post-title {
     display: none; } }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1440px) {
   .post-toc {
-    display: none; }
+    display: none; } }
+
+@media only screen and (max-width: 800px) {
   .mobile-header {
     display: block; }
   header.site-nav {
