@@ -141,8 +141,10 @@
     pageSize:"10"
   });
   var valine = document.getElementById("valine_comments");
+  var mail = valine.getElementsByClassName("vmail")[0];
   var link = valine.getElementsByClassName("vlink")[0];
-  link.setAttribute("placeholder","个人博客(http:// 选填)")
+  mail.setAttribute("placeholder","邮箱(方便我回复你)");
+  link.setAttribute("placeholder","个人博客(http:// 选填)");
 </script>
 
   
