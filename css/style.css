@@ -728,7 +728,7 @@ code {
   border-radius: 20px; }
   #valine_thread .vwrap {
     border: 1px solid #fff;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); }
   #valine_thread input {
     font-size: 14px;
     border-bottom-width: 2px;
