@@ -164,7 +164,7 @@ main {
   z-index: 0;
   color: #34495e;
   background: #f6f6f6;
-  width: 180;
+  width: 180px;
   display: none;
   padding-top: 100px; }
   #mobile-nav .slideout-menu a {
@@ -722,7 +722,28 @@ code {
 
 #valine_comments {
   background: #fff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px; }
+  #valine_comments .vwrap {
+    border: 1px solid #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); }
+  #valine_comments input {
+    font-size: 14px;
+    border-bottom-width: 2px;
+    text-align: center; }
+  #valine_comments textarea {
+    font-size: 16px; }
+  #valine_comments button.vsubmit.vbtn {
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); }
+    #valine_comments button.vsubmit.vbtn:hover {
+      border-color: #34495e;
+      background: #34495e;
+      color: #fff; }
 
 #disqus_thread {
   margin-bottom: 30px; }
