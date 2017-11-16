@@ -741,9 +741,8 @@ code {
     border-color: #fff;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); }
     #valine_comments button.vsubmit.vbtn:hover {
-      border-color: #34495e;
-      background: #34495e;
-      color: #fff; }
+      border-color: #fff;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4); }
 
 #disqus_thread {
   margin-bottom: 30px; }
