@@ -720,30 +720,30 @@ code {
       color: #f6695f;
       transform: translateX(-5px); }
 
-#valine_comments {
+#valine_thread {
   background: #fff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  padding: 30px 20px 20px;
+  padding: 10px 20px 20px;
   margin: 20px 0;
   border-radius: 20px; }
-  #valine_comments .vwrap {
+  #valine_thread .vwrap {
     border: 1px solid #fff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); }
-  #valine_comments input {
+  #valine_thread input {
     font-size: 14px;
     border-bottom-width: 2px;
     border-color: #0099cc;
     text-align: center; }
-    #valine_comments input:focus {
+    #valine_thread input:focus {
       border-color: #f6695f; }
-  #valine_comments textarea {
+  #valine_thread textarea {
     font-size: 16px; }
-  #valine_comments button.vsubmit.vbtn {
+  #valine_thread button.vsubmit.vbtn {
     background: #fff;
     color: #000;
     border-color: #fff;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); }
-    #valine_comments button.vsubmit.vbtn:hover {
+    #valine_thread button.vsubmit.vbtn:hover {
       border-color: #fff;
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4); }
 
