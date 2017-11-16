@@ -734,6 +734,8 @@ code {
     border-bottom-width: 2px;
     border-color: #0099cc;
     text-align: center; }
+    #valine_comments input:focus {
+      border-color: #f6695f; }
   #valine_comments textarea {
     font-size: 16px; }
   #valine_comments button.vsubmit.vbtn {
