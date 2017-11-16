@@ -38,14 +38,6 @@
 
   <!-- 存储服务 -->
 
-  <script src="//cdn1.lncld.net/static/js/3.2.1/av-min.js"></script>
-  <script id="leancloud">
-    AV.init({
-        appId: "7ieEM5Wg1VoXasvlhdlNIjck-gzGzoHsz",
-        appKey: "VKmKayyxXqATSX4v3fBATw7U"
-      });
-  </script>
-
 
 </head>
 
@@ -124,22 +116,34 @@
 
           
   
-  <div id="disqus_thread"></div>
+    <div id="valine_comments"></div>
+
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
 <script>
-    var shortName = 'wa-ri-github-io'
-    var disqus_config = function () {
-     this.page.url = 'http://zccblog.com/about/index.html';  // Replace PAGE_URL with your page's canonical URL variable
-     this.page.identifier = 'page'+'-about/index.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-     };
-    (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = '//'+shortName+'.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
+  var notify = 'false' == true ? true : false;
+  var verify = 'false' == true ? true : false;
+  var GUEST_INFO = ['nick','mail','link'];
+  var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+    return GUEST_INFO.indexOf(item) > -1
+  });
+  guest_info = guest_info.length == 0 ? GUEST_INFO : guest_info;
+  new Valine({
+    el: '#valine_comments',
+    notify: notify,
+    verify: verify,
+    appId: "9rESySOzWY8vhtvqnBVrI2QE-gzGzoHsz",
+    appKey: "3IkG2HwHXK0Swtix5QdSs5RN",
+    avatar: "retro",
+    placeholder: "欢迎留言~ O(∩_∩)O",
+    guest_info: guest_info,
+    pageSize:"10"
+  });
+  var valine = document.getElementById("valine_comments");
+  var link = valine.getElementsByClassName("vlink")[0];
+  link.setAttribute("placeholder","个人博客http://（选填）")
 </script>
-<script id="dsq-count-scr" src="//wa-ri-github-io.disqus.com/count.js" async></script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
   
 
