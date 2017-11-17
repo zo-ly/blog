@@ -730,7 +730,6 @@ code {
     border: 1px solid #fff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); }
   #valine_thread input {
-    font-size: 14px;
     border-bottom-width: 2px;
     border-color: #0099cc;
     text-align: center; }
@@ -739,7 +738,6 @@ code {
   #valine_thread .veditor {
     height: 8rem; }
   #valine_thread textarea {
-    font-size: 16px;
     font-family: Athelas, STHeiti, Microsoft Yahei, serif;
     margin: 10px 0;
     padding: 10px;
