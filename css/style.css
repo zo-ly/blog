@@ -1,14 +1,13 @@
 @charset "UTF-8";
 @font-face {
-  font-family: 'Chancery';
-  src: url("../fonts/chancery/apple-chancery-webfont.eot");
-  src: local("Apple Chancery"), url("../fonts/chancery/apple-chancery-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/chancery/apple-chancery-webfont.woff2") format("woff2"), url("../fonts/chancery/apple-chancery-webfont.woff") format("woff"), url("../fonts/chancery/apple-chancery-webfont.ttf") format("truetype"), url("../fonts/chancery/apple-chancery-webfont.svg#apple-chancery") format("svg");
-  font-weight: lighter;
+  font-family: 'Playball';
+  src: url("../fonts/Playball/Playball-Regular.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Lobster';
-  src: url("../fonts/Lobster/Lobster-Regular.ttf") format("truetype");
+  font-family: 'Merienda';
+  src: url("../fonts/Merienda/Merienda-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -178,7 +177,7 @@ main {
   #mobile-nav .slideout-menu .mobile-intro {
     text-align: center;
     width: 150px;
-    font-family: "Chancery", cursive, LiSu, sans-serif;
+    font-family: "Playball", cursive, LiSu, sans-serif;
     margin: 50px 10px 0;
     font-size: 18px; }
     #mobile-nav .slideout-menu .mobile-intro i {
@@ -224,7 +223,7 @@ main {
     .mobile-header .mobile-logo a {
       font-size: 30px;
       text-decoration: none;
-      font-family: "Lobster", cursive;
+      font-family: "Merienda", cursive;
       margin-right: 42px; }
 
 header.site-nav {
@@ -244,7 +243,7 @@ header.site-nav {
   header.site-nav .logo {
     float: left;
     font-size: 40px;
-    font-family: "Lobster", cursive; }
+    font-family: "Merienda", cursive; }
     header.site-nav .logo a {
       color: #fff; }
   header.site-nav a {
@@ -292,7 +291,7 @@ header.site-nav {
       left: 18%;
       top: 30%;
       margin: 0;
-      font-family: "Chancery", cursive, LiSu, sans-serif; }
+      font-family: "Playball", cursive, LiSu, sans-serif; }
       .banner .show div.banner-title .post-title {
         font-size: 36px;
         font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
@@ -727,6 +726,7 @@ code {
   margin: 20px 0;
   border-radius: 20px; }
   #valine_thread .vwrap {
+    padding: 0 10px 10px;
     border: 1px solid #fff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); }
   #valine_thread input {
@@ -736,8 +736,17 @@ code {
     text-align: center; }
     #valine_thread input:focus {
       border-color: #f6695f; }
+  #valine_thread .veditor {
+    height: 8rem; }
   #valine_thread textarea {
-    font-size: 16px; }
+    font-size: 16px;
+    font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid transparent; }
+    #valine_thread textarea:focus {
+      background: #edf4f8;
+      border-color: #c4c8cb; }
   #valine_thread button.vsubmit.vbtn {
     background: #fff;
     color: #000;
