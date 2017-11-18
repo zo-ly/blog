@@ -749,11 +749,13 @@ code {
       border-color: #2188ff;
       box-shadow: 0 0 0 0.2em rgba(3, 102, 214, 0.3), inset 0 1px 2px rgba(27, 31, 35, 0.075); }
   #valine_thread button.vsubmit.vbtn {
+    font-weight: bold;
     border-radius: 3px;
-    background: #0099cc;
+    background: #33b1ff;
     color: #fff;
-    border-color: #0099cc;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); }
+    border-color: #33b1ff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow .1s; }
     #valine_thread button.vsubmit.vbtn:hover {
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4); }
 
