@@ -6,8 +6,8 @@
   font-style: normal; }
 
 @font-face {
-  font-family: 'Merienda';
-  src: url("../fonts/Merienda/Merienda-Bold.ttf") format("truetype");
+  font-family: 'Satisfy';
+  src: url("../fonts/Satisfy/Satisfy-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -177,7 +177,7 @@ main {
   #mobile-nav .slideout-menu .mobile-intro {
     text-align: center;
     width: 150px;
-    font-family: "Playball", cursive, LiSu, sans-serif;
+    font-family: "Satisfy", cursive, LiSu, sans-serif;
     margin: 50px 10px 0;
     font-size: 18px; }
     #mobile-nav .slideout-menu .mobile-intro i {
@@ -223,7 +223,7 @@ main {
     .mobile-header .mobile-logo a {
       font-size: 30px;
       text-decoration: none;
-      font-family: "Merienda", cursive;
+      font-family: "Playball", cursive;
       margin-right: 42px; }
 
 header.site-nav {
@@ -243,7 +243,7 @@ header.site-nav {
   header.site-nav .logo {
     float: left;
     font-size: 40px;
-    font-family: "Merienda", cursive; }
+    font-family: "Playball", cursive; }
     header.site-nav .logo a {
       color: #fff; }
   header.site-nav a {
@@ -281,7 +281,7 @@ header.site-nav {
   .banner .show {
     position: relative;
     z-index: 2;
-    font-size: 60px;
+    font-size: 65px;
     height: 500px;
     background: #34495e;
     color: #fff;
@@ -289,9 +289,9 @@ header.site-nav {
     .banner .show div.banner-title {
       position: absolute;
       left: 18%;
-      top: 30%;
+      top: 36%;
       margin: 0;
-      font-family: "Playball", cursive, LiSu, sans-serif; }
+      font-family: "Satisfy", cursive, LiSu, sans-serif; }
       .banner .show div.banner-title .post-title {
         font-size: 36px;
         font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
