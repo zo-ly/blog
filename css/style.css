@@ -376,6 +376,17 @@ article.post {
     transition: color .3s; }
     article.post a:hover {
       color: #f6695f; }
+  article.post blockquote {
+    font: 14px/22px normal helvetica, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-left: 3px solid #ccc;
+    background-color: #f1f1f1; }
   article.post .post-meta .post-time {
     font-size: 20px;
     margin-bottom: 30px;
@@ -408,6 +419,25 @@ article.post {
       article.post .post-tags a:before {
         content: "#";
         font-size: 16px; }
+  article.post .post-footer {
+    margin-top: 40px;
+    text-align: center;
+    font-family: "Satisfy", cursive, LiSu, sans-serif;
+    color: #8d8a8a; }
+    article.post .post-footer:after {
+      content: "";
+      display: inline-block;
+      margin-left: 15px;
+      width: 30%;
+      border: 1px solid transparent;
+      border-top-color: #8d8c8c; }
+    article.post .post-footer:before {
+      content: "";
+      display: inline-block;
+      margin-right: 15px;
+      width: 30%;
+      border: 1px solid transparent;
+      border-top-color: #8d8c8c; }
   article.post #read-more {
     margin: 40px 0;
     text-align: center; }
