@@ -377,10 +377,11 @@ article.post {
     article.post a:hover {
       color: #f6695f; }
   article.post blockquote {
-    font: 14px/22px normal helvetica, sans-serif;
+    font: 14px/22px helvetica, sans-serif;
+    font-style: italic;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 50px;
+    margin-left: 20px;
     padding-left: 15px;
     padding-top: 10px;
     padding-right: 10px;
