@@ -949,11 +949,12 @@ footer {
         color: #f6695f; }
 
 .category-container .category-item-name {
+  font-family: Athelas;
   font-weight: normal;
-  font-style: italic;
   border-left: 2px solid #f6695f;
   line-height: 1;
-  padding-left: 20px; }
+  padding-left: 20px;
+  color: #9d9d9d; }
   .category-container .category-item-name i {
     font-size: 26px; }
 
@@ -1058,8 +1059,6 @@ footer {
     font-size: 16px; }
   .category-container .category-item a time {
     font-size: 12px; }
-  .category-container {
-    padding: 10px 20px; }
   .pagination.post-nav {
     height: 80px;
     margin: 0 16px; }
