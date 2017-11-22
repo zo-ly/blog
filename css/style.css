@@ -339,7 +339,7 @@ article#post-excerpt {
         right: 51%;
         content: "";
         background: #34495e;
-        height: 0.13rem;
+        height: 2px;
         transition: all .3s; }
       article#post-excerpt header a:hover::after {
         left: 0;
