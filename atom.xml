@@ -59,11 +59,11 @@
     </summary>
     
     
+      <category term="主题" scheme="http://zccblog.com/tags/%E4%B8%BB%E9%A2%98/"/>
+    
       <category term="Hexo" scheme="http://zccblog.com/tags/Hexo/"/>
     
       <category term="blog" scheme="http://zccblog.com/tags/blog/"/>
-    
-      <category term="主题" scheme="http://zccblog.com/tags/%E4%B8%BB%E9%A2%98/"/>
     
   </entry>
   
@@ -84,11 +84,11 @@
     </summary>
     
     
-      <category term="GitHub Pages" scheme="http://zccblog.com/tags/GitHub-Pages/"/>
-    
       <category term="Hexo" scheme="http://zccblog.com/tags/Hexo/"/>
     
       <category term="blog" scheme="http://zccblog.com/tags/blog/"/>
+    
+      <category term="GitHub Pages" scheme="http://zccblog.com/tags/GitHub-Pages/"/>
     
       <category term="静态独立博客" scheme="http://zccblog.com/tags/%E9%9D%99%E6%80%81%E7%8B%AC%E7%AB%8B%E5%8D%9A%E5%AE%A2/"/>
     
