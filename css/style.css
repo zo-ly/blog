@@ -345,11 +345,10 @@ article#post-excerpt {
         left: 0;
         right: 0; }
     article#post-excerpt header a.post-category {
-      color: #8a8a8a;
-      font-weight: normal; }
+      color: #8a8a8a; }
       article#post-excerpt header a.post-category::after {
         content: none; }
-    article#post-excerpt header .post-meta .post-time {
+    article#post-excerpt header .post-meta span.post-time {
       color: #8a8a8a;
       font-size: 16px;
       margin-bottom: 30px;
@@ -402,6 +401,10 @@ article.post {
     font-weight: bold; }
     article.post .post-meta .post-time i {
       font-weight: normal; }
+  article.post .post-meta .post-category {
+    color: #8a8a8a;
+    font-weight: normal;
+    font-size: 14px; }
   article.post .post-meta .post-visits {
     display: inline-block;
     color: #8a8a8a;
@@ -949,7 +952,6 @@ footer {
         color: #f6695f; }
 
 .category-container .category-item-name {
-  font-family: Athelas;
   font-weight: normal;
   border-left: 2px solid #f6695f;
   line-height: 1;
@@ -1052,13 +1054,18 @@ footer {
       .archives-container .archive-article .archive-meta {
         font-size: 12px; }
   .category-container ul li a.category-item {
-    font-size: 18px; }
+    font-size: 18px;
+    margin: 5px 0 0; }
     .category-container ul li a.category-item i {
       font-size: 22px; }
-  .category-container .category-item a .category-title {
-    font-size: 16px; }
-  .category-container .category-item a time {
-    font-size: 12px; }
+  .category-container {
+    padding: 30px 20px; }
+    .category-container .category-item a {
+      padding: 5px; }
+      .category-container .category-item a .category-title {
+        font-size: 16px; }
+      .category-container .category-item a time {
+        font-size: 12px; }
   .pagination.post-nav {
     height: 80px;
     margin: 0 16px; }
