@@ -252,6 +252,8 @@ header.site-nav {
     font-family: "Playball", cursive; }
     header.site-nav .logo a {
       color: #fff; }
+      header.site-nav .logo a::after {
+        content: none; }
   header.site-nav a {
     text-decoration: none;
     color: #fff;
@@ -342,6 +344,11 @@ article#post-excerpt {
       article#post-excerpt header a:hover::after {
         left: 0;
         right: 0; }
+    article#post-excerpt header a.post-category {
+      color: #8a8a8a;
+      font-weight: normal; }
+      article#post-excerpt header a.post-category::after {
+        content: none; }
     article#post-excerpt header .post-meta .post-time {
       color: #8a8a8a;
       font-size: 16px;
@@ -385,13 +392,8 @@ article.post {
   article.post blockquote {
     font: 14px/22px helvetica, sans-serif;
     font-style: italic;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    padding-left: 15px;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    margin: 10px 10px 10px 20px;
+    padding: 10px 10px 10px 15px;
     border-left: 3px solid #ccc;
     background-color: #f1f1f1; }
   article.post .post-meta .post-time {
@@ -861,6 +863,7 @@ footer {
   background: #fff;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.15); }
   .archives-container .archive-year {
+    line-height: 1;
     font-size: 30px;
     margin: 10px;
     color: #34495e; }
@@ -912,7 +915,20 @@ footer {
 .category-container ul {
   border-left: 1px dashed #aaa;
   margin-left: 20px;
-  padding: 0; }
+  margin-top: 40px;
+  padding: 0;
+  position: relative; }
+  .category-container ul::before {
+    position: absolute;
+    top: -10px;
+    left: -6px;
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px; }
   .category-container ul li {
     font-size: 20px;
     list-style: none; }
