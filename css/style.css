@@ -1056,11 +1056,11 @@ footer {
     article.post h6 {
       font-size: 14px; }
   .archives-container {
-    padding: 25px 20px 30px; }
+    padding: 15px 20px 30px; }
     .archives-container .archive-year {
       font-size: 24px;
       padding: 0 10px;
-      margin: 5px 0 5px;
+      margin: 15px 0 5px;
       border-left: 2px solid #f6695f; }
     .archives-container .archive-article {
       padding: 5px; }
