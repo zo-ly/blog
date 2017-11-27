@@ -40,6 +40,10 @@ h6 {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+html,
+body {
+  height: 100%; }
+
 body {
   margin: 0;
   font-size: 100%;
@@ -61,6 +65,12 @@ main {
 .page {
   background: #eaeaea;
   height: 100%; }
+  .page > .container {
+    min-height: 100%;
+    padding-bottom: 170px;
+    overflow: hidden; }
+  .page > footer {
+    margin-top: -170px; }
 
 @font-face {
   font-family: "iconfont";
