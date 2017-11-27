@@ -1018,6 +1018,9 @@ footer {
     display: none; } }
 
 @media only screen and (max-width: 800px) {
+  html,
+  body {
+    height: auto; }
   .mobile-header {
     display: block; }
   header.site-nav {
@@ -1066,7 +1069,7 @@ footer {
     article.post h6 {
       font-size: 14px; }
   .archives-container {
-    min-height: 300px;
+    min-height: 400px;
     padding: 15px 20px 30px; }
     .archives-container .archive-year {
       font-size: 24px;
@@ -1099,7 +1102,7 @@ footer {
     .category-container .category-item-name {
       border-left: 2px solid #f6695f; }
   .tags-container {
-    min-height: 300px;
+    min-height: 400px;
     padding: 30px 20px; }
     .tags-container .tags-content {
       margin-top: 20px; }
