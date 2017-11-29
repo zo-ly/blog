@@ -67,7 +67,7 @@ main {
   height: 100%; }
   .page > .container {
     min-height: 100%;
-    padding-bottom: 170px;
+    padding-bottom: 210px;
     overflow: hidden; }
   .page > footer {
     margin-top: -170px; }
@@ -384,7 +384,7 @@ article#post-excerpt {
 
 article.post {
   min-height: 400px;
-  margin: 0 auto 30px;
+  margin: 0 auto 15px;
   padding: 40px 20px 20px;
   background: #fff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); }
@@ -743,7 +743,6 @@ code {
     color: #dc322f; }
 
 .pagination {
-  height: 40px;
   margin: 0 auto;
   font-weight: bold; }
   .pagination i {
@@ -752,6 +751,7 @@ code {
   .pagination .next-post,
   .pagination .next {
     float: right;
+    margin-bottom: 10px;
     color: #34495e;
     font-size: 16px;
     text-decoration: none;
@@ -763,6 +763,7 @@ code {
   .pagination .prev-post,
   .pagination .prev {
     float: left;
+    margin-bottom: 10px;
     color: #34495e;
     font-size: 16px;
     text-decoration: none;
@@ -1021,6 +1022,8 @@ footer {
   html,
   body {
     height: auto; }
+  .page > .container {
+    padding-bottom: 190px; }
   .mobile-header {
     display: block; }
   header.site-nav {
@@ -1042,8 +1045,7 @@ footer {
   article#post-excerpt .post-tags a {
     padding: 0; }
   article.post {
-    padding: 10px;
-    margin: 0 auto 20px; }
+    padding: 10px; }
     article.post .post-meta .post-time {
       font-size: 14px;
       margin-bottom: 0;
@@ -1107,15 +1109,16 @@ footer {
     .tags-container .tags-content {
       margin-top: 20px; }
   .pagination.post-nav {
-    height: auto;
     margin: 0 16px; }
     .pagination.post-nav a {
       text-decoration: none; }
     .pagination.post-nav .next-post {
+      margin: 0;
       float: none;
       display: block;
       color: #0099cc; }
     .pagination.post-nav .prev-post {
+      margin: 0;
       float: none;
       display: block;
       color: #0099cc; }

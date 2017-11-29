@@ -5,6 +5,7 @@
     myFunc.toc();
     myFunc.mobileNavbar();
     myFunc.fancybox();
+    myFunc.footerStay();
   });
 
   'use strict';
@@ -168,6 +169,14 @@
 			  title	: { type : 'outside' },
 		    }
       });
+    }
+  }
+
+  myFunc.footerStay = function(){
+    var win = $(window);
+    var content = $(".page>.container");
+    if(win.width() <= 800){
+      content.css({minHeight: content.height()<win.height() ? win.height():content.height()});
     }
   }
 
