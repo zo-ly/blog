@@ -787,7 +787,7 @@ code {
     #valine_thread input:focus {
       border-color: #f6695f; }
   #valine_thread .veditor {
-    height: 8rem; }
+    min-height: 8rem; }
   #valine_thread textarea {
     font-family: Athelas, STHeiti, Microsoft Yahei, serif;
     margin: 10px 0;
