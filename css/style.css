@@ -1046,7 +1046,7 @@ footer {
   article.post {
     padding: 10px; }
     article.post .mobile-post-title > h1 {
-      border-left: 3px solid #4d4d4d;
+      border-left: 3px solid #34495e;
       margin: -10px 0 0 -10px;
       padding: 12px 0 12px 10px; }
     article.post .post-meta .post-time {
