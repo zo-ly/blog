@@ -1037,6 +1037,7 @@ footer {
     bottom: 50px; }
   article#post-excerpt header h1 {
     font-size: 22px;
+    font-weight: bold;
     margin: 0; }
   article#post-excerpt header .post-meta {
     margin-bottom: 0; }
@@ -1044,6 +1045,10 @@ footer {
     padding: 0; }
   article.post {
     padding: 10px; }
+    article.post .mobile-post-title > h1 {
+      border-left: 3px solid #4d4d4d;
+      margin: -10px 0 0 -10px;
+      padding: 12px 0 12px 10px; }
     article.post .post-meta .post-time {
       font-size: 14px;
       margin-bottom: 0;
@@ -1057,17 +1062,26 @@ footer {
         font-size: 14px;
         padding: 3px; }
     article.post h1 {
-      font-size: 20px; }
+      font-size: 21px;
+      margin: 10px 0; }
     article.post h2 {
-      font-size: 18px; }
+      font-size: 19px;
+      margin: 10px 0; }
     article.post h3 {
-      font-size: 16px; }
+      font-size: 17px;
+      margin: 10px 0; }
     article.post h4 {
-      font-size: 15px; }
+      font-size: 16px;
+      margin: 10px 0; }
     article.post h5 {
-      font-size: 15px; }
+      font-size: 16px;
+      margin: 10px 0; }
     article.post h6 {
-      font-size: 14px; }
+      font-size: 15px;
+      margin: 10px 0; }
+    article.post p {
+      font-size: 16px;
+      margin: 10px 0; }
   .archives-container {
     min-height: 400px;
     padding: 15px 20px 30px; }
