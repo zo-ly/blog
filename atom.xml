@@ -63,11 +63,11 @@
       <category term="博客搭建" scheme="http://zccblog.com/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
+      <category term="主题" scheme="http://zccblog.com/tags/%E4%B8%BB%E9%A2%98/"/>
+    
       <category term="Hexo" scheme="http://zccblog.com/tags/Hexo/"/>
     
       <category term="blog" scheme="http://zccblog.com/tags/blog/"/>
-    
-      <category term="主题" scheme="http://zccblog.com/tags/%E4%B8%BB%E9%A2%98/"/>
     
   </entry>
   
@@ -90,11 +90,11 @@
       <category term="博客搭建" scheme="http://zccblog.com/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
-      <category term="GitHub Pages" scheme="http://zccblog.com/tags/GitHub-Pages/"/>
-    
       <category term="Hexo" scheme="http://zccblog.com/tags/Hexo/"/>
     
       <category term="blog" scheme="http://zccblog.com/tags/blog/"/>
+    
+      <category term="GitHub Pages" scheme="http://zccblog.com/tags/GitHub-Pages/"/>
     
       <category term="静态独立博客" scheme="http://zccblog.com/tags/%E9%9D%99%E6%80%81%E7%8B%AC%E7%AB%8B%E5%8D%9A%E5%AE%A2/"/>
     
