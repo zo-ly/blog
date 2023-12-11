@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#34495e">
+  <title>函数式编程入门经典 | Zcc&#39;s blog</title>
+  <link rel="alternate" href="path/of/rss" type="application/atom+xml">
+  <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+  
+<link rel="stylesheet" href="/blog/css/style.css">
+
+  
+
+  
+
+  
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-107259922-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+
+  
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?371551c311dd9639c63a31616a72af4b";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+<body>
+  <div class="mobile-header">
+    <span><i class="iconfont icon-turnon" id="mobile-nav-toggle"></i></span>
+    <div class="mobile-logo">
+      <a href="/blog/.">Zcc&#39;s blog</a>
+    </div>
+  </div>
+  <div class="page" id="mobile-nav-panel">
+    <div class="container">
+      <header class="site-nav">
+      <div class="nav-content">
+        <div class="logo">
+          <a href="/blog/">Zcc&#39;s blog</a>
+        </div>
+        <nav class="navbar">
+          <ul>
+            
+              <li class="menu-item">
+                <a href="/blog/" class="menu-item-link"><i class="iconfont icon-home"></i>首页</a>
+              </li>
+            
+              <li class="menu-item">
+                <a href="/blog/archives" class="menu-item-link"><i class="iconfont icon-archive"></i>归档</a>
+              </li>
+            
+              <li class="menu-item">
+                <a href="/blog/about" class="menu-item-link"><i class="iconfont icon-about"></i>关于</a>
+              </li>
+            
+              <li class="menu-item">
+                <a href="/blog/categories" class="menu-item-link"><i class="iconfont icon-category"></i>分类</a>
+              </li>
+            
+              <li class="menu-item">
+                <a href="/blog/tags" class="menu-item-link"><i class="iconfont icon-tags"></i>标签</a>
+              </li>
+            
+          </ul>
+        </nav>
+      </div>
+</header>
+
+      <div class="banner">
+  <div class="show">
+    <!-- <img src="/blog/" alt="banner"> -->
+    <div class="banner-title">
+      
+        <div class="post-title">
+          函数式编程入门经典
+            <div class="post-tags">
+    		    
+              <a class="tag-none-link" href="/blog/tags/JavaScript/" rel="tag">JavaScript</a> <a class="tag-none-link" href="/blog/tags/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/" rel="tag">函数式编程</a>
+            
+    	      </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+      <main class="main"id="main">
+          <article class="post">
+  
+
+  <header>
+    <div class="post-title mobile-post-title">
+      <h1>函数式编程入门经典</h1>
+        <div class="post-tags">
+        
+          <a class="tag-none-link" href="/blog/tags/JavaScript/" rel="tag">JavaScript</a> <a class="tag-none-link" href="/blog/tags/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/" rel="tag">函数式编程</a>
+        
+        </div>
+    </div>
+    <div class="post-meta">
+      <span class="post-time"><i class="iconfont icon-calendar"></i>2020-08-10</span>
+      
+          
+            <i class="iconfont icon-divide"></i>
+            <i class="iconfont icon-folder" style="color: #8a8a8a;"></i>
+            <a class="post-category" href="/blog/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
+          
+      
+      <!----------------------------------->
+        
+      <!----------------------------------->
+    </div>
+  </header>
+  
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">目录</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8%E7%BB%8F%E5%85%B8"><span class="toc-text">函数式编程入门经典</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B%E7%AE%80%E4%BB%8B"><span class="toc-text">第一章 函数式编程简介</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E4%BA%9B%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F"><span class="toc-text">一些编程范式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B"><span class="toc-text">函数式编程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-JavaScript%E5%87%BD%E6%95%B0%E5%9F%BA%E7%A1%80"><span class="toc-text">第二章 JavaScript函数基础</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0"><span class="toc-text">第三章 高阶函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E7%AD%89%E5%85%AC%E6%B0%91"><span class="toc-text">一等公民</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E9%97%AD%E5%8C%85%E4%B8%8E%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0"><span class="toc-text">第四章 闭包与高阶函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-%E6%95%B0%E7%BB%84%E7%9A%84%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B"><span class="toc-text">第五章 数组的函数式编程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E7%AB%A0-%E6%9F%AF%E9%87%8C%E5%8C%96%E4%B8%8E%E5%81%8F%E5%BA%94%E7%94%A8"><span class="toc-text">第六章 柯里化与偏应用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%83%E7%AB%A0-%E7%BB%84%E5%90%88%E4%B8%8E%E7%AE%A1%E9%81%93"><span class="toc-text">第七章 组合与管道</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AB%E7%AB%A0-%E5%87%BD%E5%AD%90-Functor"><span class="toc-text">第八章 函子(Functor)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B9%9D%E7%AB%A0-%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3-Monad"><span class="toc-text">第九章 深入理解 Monad</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E7%AB%A0-%E4%BD%BF%E7%94%A8-Generator"><span class="toc-text">第十章 使用 Generator</span></a></li></ol></li></ol>
+    </div>
+  </div>
+
+
+  <div class="post-content">
+    <h1 id="函数式编程入门经典"><a href="#函数式编程入门经典" class="headerlink" title="函数式编程入门经典"></a>函数式编程入门经典</h1><h2 id="第一章-函数式编程简介"><a href="#第一章-函数式编程简介" class="headerlink" title="第一章 函数式编程简介"></a>第一章 函数式编程简介</h2><h3 id="一些编程范式"><a href="#一些编程范式" class="headerlink" title="一些编程范式"></a>一些编程范式</h3><p>_命令式编程范式_(imperative)): 让机器按照规定的命令执行下去，即一步一步告诉计算机先做什么在做什么</p>
+<p>_声明式编程_(declarative)：是以数据结构的形式来表达程序执行的逻辑。它的主要思想是告诉计算机应该做什么，但不指定具体要怎么做。</p>
+<p>_函数式编程_(functional)最重要的特点是“函数第一位”，即函数可以出现在任何地方，把函数作为参数传递给另一个函数，不仅如此你还可以将函数作为返回值。</p>
+<h3 id="函数式编程"><a href="#函数式编程" class="headerlink" title="函数式编程"></a>函数式编程</h3><p>创建仅依赖输入就可以完成自身逻辑的函数</p>
+<p>函数式编程和声明式编程是有所关联的，因为他们思想是一致的：即只关注做什么而不是怎么做。但函数式编程不仅仅局限于声明式编程。</p>
+<span id="more"></span>
+
+<ul>
+<li>函数式编程的好处<ul>
+<li>大多说函数式编程的好处来自于纯函数</li>
+</ul>
+</li>
+<li>纯函数<ul>
+<li>给定输入返回相同输出，不改变外部环境</li>
+</ul>
+</li>
+<li>纯函数的好处<ol>
+<li>可测试</li>
+<li>可读性高</li>
+<li>可缓存</li>
+<li>不用担心代码并发执行</li>
+</ol>
+</li>
+<li>JavaScript更像一种多范式语言，但是非常适合函数式编程范式</li>
+</ul>
+<h2 id="第二章-JavaScript函数基础"><a href="#第二章-JavaScript函数基础" class="headerlink" title="第二章 JavaScript函数基础"></a>第二章 JavaScript函数基础</h2><ul>
+<li>使用箭头函数代码要简洁得多</li>
+<li><code>var</code> 在函数内不管在哪个块，总是全局的定义变量</li>
+<li><code>babel</code> <code>bael-cli</code> <code>bael-node</code> 的配置和使用</li>
+</ul>
+<h2 id="第三章-高阶函数"><a href="#第三章-高阶函数" class="headerlink" title="第三章 高阶函数"></a>第三章 高阶函数</h2><h3 id="一等公民"><a href="#一等公民" class="headerlink" title="一等公民"></a>一等公民</h3><p>当一门语言允许函数作为任何其他数据类型使用时，函数被称为这门语言的一等公民</p>
+<blockquote>
+<p>在编程语言中，一等公民可以作为函数参数，可以作为函数返回值，也可以赋值给变量。<br>In general, a value in a programming language is said to have ﬁrst-class status if it can be passed as a parameter, returned from a subroutine, or assigned into a variable.<br>–《<a href="https://www.cs.rochester.edu/~scott/pragmatics/">Programming Language Pragmatics</a>》</p>
+<p>函数作为一等公民是函数式编程的必要条件，高阶函数(higher-order functions)，就是使用函数作为参数的函数，它在函数式编程中很常见<br>First-class functions are a necessity for the functional programming style, in which the use of higher-order functions is a standard practice.<br>–<a href="https://en.wikipedia.org/wiki/First-class_function">wikipedia</a></p>
+</blockquote>
+<p>高阶函数式是接受函数作为参数 <em>并且</em> | <em>或者</em> 返回函数作为输出的函数</p>
+<ul>
+<li>高阶函数就是定义抽象</li>
+<li>抽象让我们专注于预定的目标而无须关心底层的系统概念</li>
+<li>大多数高阶函数都会与闭包一起使用</li>
+</ul>
+<h2 id="第四章-闭包与高阶函数"><a href="#第四章-闭包与高阶函数" class="headerlink" title="第四章 闭包与高阶函数"></a>第四章 闭包与高阶函数</h2><p>为什么叫 “闭包（Closure）”</p>
+<blockquote>
+<p>a function which <strong>closes over</strong> the <strong>environment(scope)</strong> in which it was defined<br>在一个封<strong>闭</strong>的此法作用域中，将某些自由变量<strong>包</strong>在定义它的函数中</p>
+</blockquote>
+<ul>
+<li>闭包就是一个<strong>内部函数</strong>（另一个函数内部的函数），有三个可访问的作用域 1. 自身声明的 2. 全局变量的 3. <strong>外部函数的</strong></li>
+<li>闭包的缺点，常驻内存，内存消耗对脚本性能产生负面影响</li>
+</ul>
+<h2 id="第五章-数组的函数式编程"><a href="#第五章-数组的函数式编程" class="headerlink" title="第五章 数组的函数式编程"></a>第五章 数组的函数式编程</h2><ul>
+<li>把函数应用于一个值并创建一个新值的过程称为投影（不改变自身而产生新值）</li>
+<li>设置累加器并遍历数组以生成一个单一元素的过程称为归约数组，重复该过程称为归约操作</li>
+<li>投影函数 <code>map</code> <code>filter</code> <code>concat</code> <code>reduce</code> <code>zip</code>，让使用数组变得简单，理解这些函数的运行机制有助于对函数式有更加深入的思考</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">map</span> = (<span class="params">array, fn</span>) =&gt; &#123;</span><br><span class="line">  <span class="keyword">let</span> results = [];</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> value <span class="keyword">of</span> array) &#123;</span><br><span class="line">    results.<span class="title function_">push</span>(<span class="title function_">fn</span>(value));</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> results;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">filter</span> = (<span class="params">array, fn</span>) =&gt; &#123;</span><br><span class="line">  <span class="keyword">let</span> results = [];</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> value <span class="keyword">of</span> array) &#123;</span><br><span class="line">    <span class="title function_">fn</span>(value) &amp;&amp; results.<span class="title function_">push</span>(value);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> results;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">concatAll</span> = (<span class="params">array</span>) =&gt; &#123;</span><br><span class="line">  <span class="keyword">let</span> results = [];</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">let</span> value <span class="keyword">of</span> array) &#123;</span><br><span class="line">    results.<span class="property">push</span>.<span class="title function_">apply</span>(results, <span class="title class_">Array</span>.<span class="title function_">isArray</span>(value) ? value : [value]);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> results;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">reduce</span> = (<span class="params">array, fn, initValue</span>) =&gt; &#123;</span><br><span class="line">  <span class="keyword">let</span> acc = array[<span class="number">0</span>];</span><br><span class="line">  <span class="keyword">if</span> (initValue !== <span class="literal">undefined</span>) &#123;</span><br><span class="line">    acc = initValue;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">const</span> value <span class="keyword">of</span> array) &#123;</span><br><span class="line">      acc = <span class="title function_">fn</span>(acc, value);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">1</span>;i &lt; array.<span class="property">length</span>;i++) &#123;</span><br><span class="line">      acc = <span class="title function_">fn</span>(acc, array[i]);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> acc;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">zip</span> = (<span class="params">leftArr, rightArr, fn</span>) =&gt; &#123;</span><br><span class="line">  <span class="keyword">let</span> results = [];</span><br><span class="line">  <span class="keyword">const</span> maxLen = <span class="title class_">Math</span>.<span class="title function_">min</span>(leftArr.<span class="property">length</span>, rightArr.<span class="property">length</span>);</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>;i &lt; maxLen;i++) &#123;</span><br><span class="line">    results.<span class="title function_">push</span>(<span class="title function_">fn</span>(leftArr[i], rightArr[i]));</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> results;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> arrayUtils = &#123;</span><br><span class="line">  map,</span><br><span class="line">  zip,</span><br><span class="line">  filter,</span><br><span class="line">  reduce,</span><br><span class="line">  concatAll</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="第六章-柯里化与偏应用"><a href="#第六章-柯里化与偏应用" class="headerlink" title="第六章 柯里化与偏应用"></a>第六章 柯里化与偏应用</h2><ul>
+<li>柯里化就是把一个多参数函数转换为一个嵌套的一元函数的过程<ul>
+<li>只接受一个参数的函数称为一元函数，接受两个参数的函数称为二元函数，接受n个参数的函数称为n元函数</li>
+<li>接受可变数量的参数称为变参函数，通过<code>arguments</code>可捕获该函数的额外参数</li>
+<li>es6的扩展运算符，更简洁、更清晰的表示一个函数接受可变的参数</li>
+</ul>
+</li>
+<li>柯里化函数有助于移除很多函数中的样板代码（boilerplate code，几乎不变的、重复的代码）</li>
+</ul>
+<p><code>arguments</code> 是一个类数组对象，是所有（非箭头）函数中都可用的局部变量</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 类数组对象</span></span><br><span class="line"><span class="keyword">var</span> my_object = &#123;</span><br><span class="line">  <span class="string">&#x27;0&#x27;</span>: <span class="string">&#x27;zero&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;1&#x27;</span>: <span class="string">&#x27;one&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;2&#x27;</span>: <span class="string">&#x27;two&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;3&#x27;</span>: <span class="string">&#x27;three&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;4&#x27;</span>: <span class="string">&#x27;four&#x27;</span>,</span><br><span class="line">  <span class="attr">length</span>: <span class="number">5</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p><code>Array.prototype.slice.call(arguments)</code> 将 <code>arguments</code> 转换为一个真正的数组 <a href="https://stackoverflow.com/questions/7056925/how-does-array-prototype-slice-call-work">参考</a></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">curry</span> = (<span class="params">fn</span>) =&gt; &#123;</span><br><span class="line">  <span class="keyword">if</span> (<span class="keyword">typeof</span> fn !== <span class="string">&#x27;function&#x27;</span>) &#123;</span><br><span class="line">    <span class="keyword">throw</span> <span class="title class_">Error</span>(<span class="string">&#x27;no function provided&#x27;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">function</span> <span class="title function_">curried</span>(<span class="params">...args</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (args.<span class="property">length</span> &lt; fn.<span class="property">length</span>) &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> curried.<span class="title function_">apply</span>(<span class="literal">null</span>, args.<span class="title function_">concat</span>([].<span class="property">slice</span>.<span class="title function_">call</span>(<span class="variable language_">arguments</span>)));</span><br><span class="line">      &#125;;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="title function_">fn</span>(...args);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>偏函数的应用称为偏应用</li>
+<li>柯里化和偏函数都是将多参函数转换为接受更少参数函数的方法，区别在于<ul>
+<li>柯里化是将函数转换为多个嵌套的一元函数</li>
+<li>偏函数可以接受不只一个参数，它被固定了部分参数作为预设，并可以接受剩余的参数</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">partial</span> = (<span class="params">fn, ...partialArgs</span>) =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">function</span> (<span class="params">extraArg</span>) &#123;</span><br><span class="line">    <span class="keyword">let</span> args = [].<span class="title function_">concat</span>(partialArgs);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>;i &lt; args.<span class="property">length</span>;i++) &#123;</span><br><span class="line">      <span class="keyword">if</span> (args[i] === <span class="literal">undefined</span>) &#123;</span><br><span class="line">        args[i] = extraArg;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> fn.<span class="title function_">apply</span>(<span class="literal">null</span>, args);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>我们需要 <code>curry</code> 或者 <code>partial</code>, 但并不是同时需要</li>
+<li>柯里化和偏应用一直是函数式编程的工具，该用 <code>curry</code> 还是 <code>partial</code> 应该视情况而定，取决于具体场景</li>
+</ul>
+<h2 id="第七章-组合与管道"><a href="#第七章-组合与管道" class="headerlink" title="第七章 组合与管道"></a>第七章 组合与管道</h2><p>Unix的一些理念</p>
+<ul>
+<li>每个程序只做好一件事情</li>
+<li>重新构建要好于在复杂的旧程序中添加“新属性”</li>
+<li>每个程序的输出应该是另外一个尚未可知的程序的输入</li>
+</ul>
+<p>组合与管道</p>
+<ul>
+<li>无需创建新的函数就可以通过基础函数解决问题</li>
+<li>小函数 组合为 大函数，简单的函数容易阅读、测试和维护</li>
+<li>组合与管道做相同的事情，只是数据流方向不同而已</li>
+<li>从左至右处理数据流的过程称为管道（pipeline）或序列（sequence）</li>
+</ul>
+<p>小巧的 <code>compose</code> 或 <code>pipe</code> 用处很大，能够让开发者通过定义良好的小函数按需组合成复杂的函数</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">compose</span> = (<span class="params">...fns</span>) =&gt;</span><br><span class="line">  <span class="function">(<span class="params">value</span>) =&gt;</span> fns.<span class="title function_">reverse</span>().<span class="title function_">reduce</span>(<span class="function">(<span class="params">pre, current</span>) =&gt;</span> <span class="title function_">current</span>(pre), value);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">pipe</span> = (<span class="params">...fns</span>) =&gt;</span><br><span class="line">  <span class="function">(<span class="params">value</span>) =&gt;</span> fns.<span class="title function_">reduce</span>(<span class="function">(<span class="params">pre, current</span>) =&gt;</span> <span class="title function_">current</span>(pre), value);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">identity</span> = (<span class="params">it</span>) =&gt; &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;[debug]&#x27;</span>, it);</span><br><span class="line">  <span class="keyword">return</span> it;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="第八章-函子-Functor"><a href="#第八章-函子-Functor" class="headerlink" title="第八章 函子(Functor)"></a>第八章 函子(Functor)</h2><p>用一种纯函数式的方式帮助我们处理错误</p>
+<p>函子是一个实现了map契约的对象，在遍历每个对象值得时候生成一个新的对象</p>
+<ul>
+<li>函子是一个持有值的容器</li>
+<li>函子实现了map方法（单纯的持有值是几乎没有应用场景的）</li>
+<li>Pointed函子是一个函子的子集，它具有实现了<code>of</code>契约的接口</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title class_">Container</span> = <span class="keyword">function</span>(<span class="params">val</span>) &#123;</span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">value</span> = val</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title class_">Container</span>.<span class="property">of</span> = <span class="keyword">function</span>(<span class="params">val</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Container</span>(val)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title class_">Container</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">map</span> = <span class="keyword">function</span>(<span class="params">fn</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="title class_">Container</span>.<span class="title function_">of</span>(<span class="title function_">fn</span>(<span class="variable language_">this</span>.<span class="property">value</span>))</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>实现map函数的方式提供了不同类型的函子</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">  MayBe函子</span></span><br><span class="line"><span class="comment">  1. 避免麻烦的 null 或 undefined 检查</span></span><br><span class="line"><span class="comment">  2. 所有map函数都会被调用</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">const</span> <span class="title class_">MayBe</span> = <span class="keyword">function</span>(<span class="params">val</span>) &#123;</span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">value</span> = val;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title class_">MayBe</span>.<span class="property">of</span> = <span class="keyword">function</span>(<span class="params">val</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">MayBe</span>(val);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title class_">MayBe</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">isNothing</span> = <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> !<span class="variable language_">this</span>.<span class="property">value</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title class_">MayBe</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">map</span> = <span class="keyword">function</span>(<span class="params">fn</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="title function_">isNothing</span>() ? <span class="title class_">MayBe</span>.<span class="title function_">of</span>(<span class="literal">null</span>) : <span class="title class_">MayBe</span>.<span class="title function_">of</span>(<span class="title function_">fn</span>(<span class="variable language_">this</span>.<span class="property">value</span>));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">splitStr</span> = (<span class="params">str</span>) =&gt; str.<span class="title function_">split</span>(<span class="string">&#x27; &#x27;</span>);</span><br><span class="line"><span class="title class_">MayBe</span>.<span class="title function_">of</span>(<span class="literal">null</span>).<span class="title function_">map</span>(splitStr).<span class="title function_">map</span>(splitStr);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">  Either函子</span></span><br><span class="line"><span class="comment">  确定报错原因，以便分析问题</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">const</span> <span class="title class_">Nothing</span> = <span class="keyword">function</span>(<span class="params">val</span>) &#123;</span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">value</span> = val;</span><br><span class="line">&#125;</span><br><span class="line"><span class="title class_">Nothing</span>.<span class="property">of</span> = <span class="keyword">function</span>(<span class="params">val</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Nothing</span>(val);</span><br><span class="line">&#125;</span><br><span class="line"><span class="title class_">Nothing</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">map</span> = <span class="keyword">function</span>(<span class="params">fn</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="variable language_">this</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="title class_">Some</span> = <span class="keyword">function</span>(<span class="params">val</span>) &#123;</span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">value</span> = val;</span><br><span class="line">&#125;</span><br><span class="line"><span class="title class_">Some</span>.<span class="property">of</span> = <span class="keyword">function</span>(<span class="params">val</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Some</span>(val);</span><br><span class="line">&#125;</span><br><span class="line"><span class="title class_">Some</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">map</span> = <span class="keyword">function</span>(<span class="params">fn</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="title class_">Some</span>.<span class="title function_">of</span>(<span class="title function_">fn</span>(<span class="variable language_">this</span>.<span class="property">value</span>));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> <span class="title class_">Either</span>;</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">  <span class="title class_">Either</span> = <span class="title class_">Some</span>.<span class="title function_">of</span>(<span class="comment">/*sth.*/</span>)</span><br><span class="line">&#125; <span class="keyword">catch</span> &#123;</span><br><span class="line">  <span class="title class_">Either</span> = <span class="title class_">Nothing</span>.<span class="title function_">of</span>(<span class="comment">/*err msg*/</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="title class_">Either</span>.<span class="title function_">map</span>(<span class="comment">/*do sth.*/</span>).<span class="title function_">map</span>(<span class="comment">/*do sth.*/</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="第九章-深入理解-Monad"><a href="#第九章-深入理解-Monad" class="headerlink" title="第九章 深入理解 Monad"></a>第九章 深入理解 Monad</h2><p>Monad有助于扁平化 <code>MayBe</code>数据</p>
+<ul>
+<li>Monad就是一个含有 <code>chain</code> 方法的函子</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">MayBe</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">join</span> = <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="title function_">isNothing</span>() ? <span class="title class_">MayBe</span>.<span class="title function_">of</span>(<span class="literal">null</span>) : <span class="variable language_">this</span>.<span class="property">value</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title class_">MayBe</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">chain</span> = <span class="keyword">function</span>(<span class="params">fn</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="title function_">map</span>(fn).<span class="title function_">join</span>()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Monad和函子(Functor)是函数式领域的概念，如果需要深入理解，可研读《<a href="https://book.douban.com/subject/26772149/">Scala函数式编程</a>》</p>
+<h2 id="第十章-使用-Generator"><a href="#第十章-使用-Generator" class="headerlink" title="第十章 使用 Generator"></a>第十章 使用 Generator</h2><p>书中使用 Generator 主要是用来解决 JavaScript 中的异步回调问题</p>
+<ul>
+<li>同步：函数在执行时会阻塞调用者，并在执行完毕后返回结果</li>
+<li>异步：函数在执行时不会阻塞调用者，一旦执行完毕就会返回结果</li>
+<li>惰性求值：代码直到调用时才会执行</li>
+<li>Generator 是 ES6 规范的一部分，被捆绑在语言层面<ul>
+<li>不能无限制地调用 <code>next</code> 从 Generator 中取值，Generator 如同序列，一旦序列中的值被消费，就不能再次消费它</li>
+<li><code>yield</code> 使 Generator 函数暂停了执行并将结果返回给调用者</li>
+<li><code>done</code> 是一个判断 Generator 序列是否已被完全消费的属性</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div class="post-footer">the end</div>
+</article>
+
+          
+  <nav class="pagination post-nav">
+    
+      <a href="/blog/2021/03/17/http-basics/">
+        <div class="prev-post">
+          <i class="iconfont icon-back"></i>
+          <span class="truncate-text">
+            图解 HTTP
+          </span>
+        </div>
+      </a>
+    
+    
+      <a href="/blog/2017/10/30/about-layout/">
+        <div class="next-post">
+          <span class="truncate-text">
+            关于CSS的常用布局
+          </span>
+          <i class="iconfont icon-more"></i>
+        </div>
+      </a>
+    
+  </nav>
+
+
+          
+  
+    <div id="giscus_thread">
+  <h2 class="title">
+    
+      欢迎留言~
+    
+  </h2>
+  <div class="giscus"></div>
+</div>
+
+<script src="https://giscus.app/client.js"
+        data-repo="zo-ly/blog"
+        data-repo-id="MDEwOlJlcG9zaXRvcnk1OTgwNTA4Nw=="
+        data-category="Announcements"
+        data-category-id="DIC_kwDOA5CNn84Cbi50"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="0"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light_tritanopia"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+
+  
+
+
+      </main>
+    </div>
+    <footer>
+      <div class="social-links">
+        
+          
+        
+          
+        
+          
+            <a href="https://github.com/zo-ly"><i class="iconfont icon-github"></i></a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <a href="/blog/atom.xml"><i class="iconfont icon-rss"></i></a>
+          
+        
+      </div>
+      
+        <div class="quote">
+          <p>草在结它的种子，风在摇它的叶子。我们站着，不说话，就十分美好。——顾城《门前》</p>
+        </div>
+      
+      <div class="copyright">
+        <p>
+          由 <a href="https://hexo.io/">Hexo</a> 强力驱动
+          <span>|</span>
+          主题 - <a href="https://github.com/zo-ly/hexo-theme-ztopic">ztopic</a
+        </p>
+        <p>
+          <span>
+          
+          &copy;
+          
+            2016 - 2023
+          
+          </span>
+          <i class="iconfont icon-circle"></i>
+          <span>Zcc</span>
+        </p>
+      </div>
+</footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <div id="mobile-nav">
+  <nav id="mobile-nav-menu">
+    
+      <a href="/blog/" class="mobile-nav-link"><i class="iconfont icon-home"></i>首页</a>
+    
+      <a href="/blog/archives" class="mobile-nav-link"><i class="iconfont icon-archive"></i>归档</a>
+    
+      <a href="/blog/about" class="mobile-nav-link"><i class="iconfont icon-about"></i>关于</a>
+    
+      <a href="/blog/categories" class="mobile-nav-link"><i class="iconfont icon-category"></i>分类</a>
+    
+      <a href="/blog/tags" class="mobile-nav-link"><i class="iconfont icon-tags"></i>标签</a>
+    
+    <div class="mobile-intro"><i class="iconfont icon-pen"></i>practice makes perfect</div>
+  </nav>
+</div>
+
+
+  
+<script src="/blog/libs/jQuery/jquery-3.2.1.min.js"></script>
+
+  
+<script src="/blog/libs/slideout/slideout.min.js"></script>
+
+  
+    
+<link rel="stylesheet" href="/blog/libs/fancybox/jquery.fancybox.css">
+
+    
+<script src="/blog/libs/fancybox/jquery.fancybox.pack.js"></script>
+
+  
+  
+
+  
+<script src="/blog/js/ztopic.js"></script>
+
+</body>
+</html>

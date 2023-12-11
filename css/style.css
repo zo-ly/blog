@@ -470,6 +470,7 @@ article#post-excerpt .post-tags a:hover {
 }
 
 article.post {
+  border-radius: 4px;
   min-height: 400px;
   margin: 0 auto 15px;
   padding: 40px 20px 20px;
@@ -937,37 +938,54 @@ code {
 }
 
 .pagination {
-  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
   font-weight: bold;
+}
+.pagination .truncate-text {
+  display: inline-block;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .pagination i {
   font-size: 24px;
   vertical-align: sub;
 }
-.pagination .next-post,
-.pagination .next {
-  float: right;
-  color: #34495e;
-  font-size: 16px;
+.pagination a {
+  display: block;
+  width: 50%;
   text-decoration: none;
+}
+.pagination a:last-child {
+  text-align: right;
+}
+.pagination .next,
+.pagination .prev {
+  transition: transform 0.3s;
+}
+.pagination .next:hover,
+.pagination .prev:hover {
+  transform: translateX(5px);
+}
+.pagination .next-post,
+.pagination .prev-post {
+  display: flex;
+  align-items: center;
+  color: #0099cc;
+  font-size: 16px;
   transition: all 0.3s;
 }
 .pagination .next-post:hover,
-.pagination .next:hover {
+.pagination .prev-post:hover {
   color: #f6695f;
   transform: translateX(5px);
 }
-.pagination .prev-post,
-.pagination .prev {
-  float: left;
-  color: #34495e;
-  font-size: 16px;
-  text-decoration: none;
-  transition: all 0.3s;
-}
-.pagination .prev-post:hover,
-.pagination .prev:hover {
-  color: #f6695f;
+.pagination .pre:hover,
+.pagination .prev-post:hover {
   transform: translateX(-5px);
 }
 
@@ -1405,22 +1423,6 @@ footer .copyright a:hover {
   }
   .tags-container .tags-content {
     margin-top: 20px;
-  }
-  .pagination.post-nav {
-    margin: 0 16px;
-  }
-  .pagination.post-nav a {
-    text-decoration: none;
-  }
-  .pagination.post-nav .next-post {
-    float: none;
-    display: block;
-    color: #0099cc;
-  }
-  .pagination.post-nav .prev-post {
-    float: none;
-    display: block;
-    color: #0099cc;
   }
   footer .social-links a i {
     margin: 0 10px;

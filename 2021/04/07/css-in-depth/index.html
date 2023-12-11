@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#34495e">
+  <title>CSS in Depth | Zcc&#39;s blog</title>
+  <link rel="alternate" href="path/of/rss" type="application/atom+xml">
+  <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+  
+<link rel="stylesheet" href="/blog/css/style.css">
+
+  
+
+  
+
+  
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-107259922-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+
+  
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?371551c311dd9639c63a31616a72af4b";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+<body>
+  <div class="mobile-header">
+    <span><i class="iconfont icon-turnon" id="mobile-nav-toggle"></i></span>
+    <div class="mobile-logo">
+      <a href="/blog/.">Zcc&#39;s blog</a>
+    </div>
+  </div>
+  <div class="page" id="mobile-nav-panel">
+    <div class="container">
+      <header class="site-nav">
+      <div class="nav-content">
+        <div class="logo">
+          <a href="/blog/">Zcc&#39;s blog</a>
+        </div>
+        <nav class="navbar">
+          <ul>
+            
+              <li class="menu-item">
+                <a href="/blog/" class="menu-item-link"><i class="iconfont icon-home"></i>首页</a>
+              </li>
+            
+              <li class="menu-item">
+                <a href="/blog/archives" class="menu-item-link"><i class="iconfont icon-archive"></i>归档</a>
+              </li>
+            
+              <li class="menu-item">
+                <a href="/blog/about" class="menu-item-link"><i class="iconfont icon-about"></i>关于</a>
+              </li>
+            
+              <li class="menu-item">
+                <a href="/blog/categories" class="menu-item-link"><i class="iconfont icon-category"></i>分类</a>
+              </li>
+            
+              <li class="menu-item">
+                <a href="/blog/tags" class="menu-item-link"><i class="iconfont icon-tags"></i>标签</a>
+              </li>
+            
+          </ul>
+        </nav>
+      </div>
+</header>
+
+      <div class="banner">
+  <div class="show">
+    <!-- <img src="/blog/" alt="banner"> -->
+    <div class="banner-title">
+      
+        <div class="post-title">
+          CSS in Depth
+            <div class="post-tags">
+    		    
+              <a class="tag-none-link" href="/blog/tags/CSS/" rel="tag">CSS</a>
+            
+    	      </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+      <main class="main"id="main">
+          <article class="post">
+  
+
+  <header>
+    <div class="post-title mobile-post-title">
+      <h1>CSS in Depth</h1>
+        <div class="post-tags">
+        
+          <a class="tag-none-link" href="/blog/tags/CSS/" rel="tag">CSS</a>
+        
+        </div>
+    </div>
+    <div class="post-meta">
+      <span class="post-time"><i class="iconfont icon-calendar"></i>2021-04-07</span>
+      
+          
+            <i class="iconfont icon-divide"></i>
+            <i class="iconfont icon-folder" style="color: #8a8a8a;"></i>
+            <a class="post-category" href="/blog/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
+          
+      
+      <!----------------------------------->
+        
+      <!----------------------------------->
+    </div>
+  </header>
+  
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">目录</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#CSS-in-Depth"><span class="toc-text">CSS in Depth</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%B8%E5%AF%B9%E5%8D%95%E4%BD%8D"><span class="toc-text">相对单位</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%90%86%E8%A7%A3%E6%B5%AE%E5%8A%A8"><span class="toc-text">理解浮动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Flexbox"><span class="toc-text">Flexbox</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%93%8D%E5%BA%94%E5%BC%8F%E8%AE%BE%E8%AE%A1"><span class="toc-text">响应式设计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A8%A1%E5%9D%97%E5%8C%96CSS"><span class="toc-text">模块化CSS</span></a></li></ol></li></ol>
+    </div>
+  </div>
+
+
+  <div class="post-content">
+    <h1 id="CSS-in-Depth"><a href="#CSS-in-Depth" class="headerlink" title="CSS in Depth"></a>CSS in Depth</h1><h2 id="相对单位"><a href="#相对单位" class="headerlink" title="相对单位"></a>相对单位</h2><p>像素(px)是绝对单位，即 5px 放哪都一样大<br>不常用的绝对单位是mm（毫米）、cm（厘米）、in（英寸）、pt（点，印刷术语，1&#x2F;72英寸）、pc（派卡，印刷术语，12点）<br>这些单位都可以通过公式互相换算：1in &#x3D; 25.4mm &#x3D; 2.54cm &#x3D; 6pc &#x3D; 72pt &#x3D; 96px</p>
+<p>CSS单位会根据浏览器、操作系统或者硬件适当缩放<br>像素是一个具有误导性的名称，CSS像素并不严格等于显示器的像素</p>
+<p>em 和 rem 是相对单位，它们会根据作用到的元素而变化</p>
+<p>当智能手机出现后，开发人员再也无法假装每个用户访问网站的体验都能一样(lll￢ω￢)</p>
+<p>建议用rem设置字号，但是有选择地用em实现网页组件的简单缩放</p>
+<p>结合伪类 <code>:root</code> 以及 rem &#x2F; vw，不用媒体查询也能让整个网页响应式缩放</p>
+<span id="more"></span>
+
+<h2 id="理解浮动"><a href="#理解浮动" class="headerlink" title="理解浮动"></a>理解浮动</h2><p>flexbox的行为很直观，可预测性更好，浮动的学习显得有些没有必要，除非在开发中需要兼容IE系浏览器(IE10 支持部分lexbox属性)或者维护旧代码库。</p>
+<p>让文字围绕图片的效果，浮动仍然是唯一的办法，这恰恰也是浮动的设计初衷。</p>
+<h2 id="Flexbox"><a href="#Flexbox" class="headerlink" title="Flexbox"></a>Flexbox</h2><p>Flexible Box Layout</p>
+<p>一行多列的布局情况下，考虑到内容加载，浏览器会重新计算每个弹性子元素的大小，用户会短暂的看到不符合预期的布局，所以整页布局一行多列的时候不推荐使用flexbox</p>
+<p>flexbox比border-radius属性的支持范围更广（大雾</p>
+<p>如果是行内元素，那么它给父元素贡献的高度会根据line-height计算，而不是根据padding和内容</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">flex</span>: <span class="number">1</span>;</span><br><span class="line"><span class="comment">/* 推荐使用简写属性 flex，flex简写会给其他子属性提供默认值</span></span><br><span class="line"><span class="comment">flex-grow: 1;</span></span><br><span class="line"><span class="comment">flex-shrink: 1;</span></span><br><span class="line"><span class="comment">flex-basis: 0%;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+<p>flex-basis 的初始值是auto，如果设置了width值，则使用该值做为flex-basis，否则用元素内容自身的大小；如果flex-basis不是auto，则width属性会被忽略</p>
+<p>flex-grow 是将容器多出来的留白分配给子元素的属性，值为非负整数，为 0 则弹性子元素的宽度不会超过flex-basis的值，非 0 则按照设置的值的比例进行分配</p>
+<p>flex-shrink 是处理溢出宽度的属性，值为非负整数，为 0 则表示不收缩，非 0 则表示按照设置得值的比例收缩，值越大收缩得越多</p>
+<p><a href="https://github.com/philipwalton/flexbugs">Flexbugs</a> 该项目维护了所有已知的flexbox的浏览器兼容性问题，并在大部分情况下给出了解决方案</p>
+<h2 id="响应式设计"><a href="#响应式设计" class="headerlink" title="响应式设计"></a>响应式设计</h2><p>给视口添加 <a href="https://developer.mozilla.org/zh-CN/docs/Mobile/Viewport_meta_tag">meta标签</a><br>meta 标签的 content 属性里包含两个选项 1. 它告诉浏览器当解析CSS时将设备的宽度作为假定宽度，而不是一个全屏的桌面浏览器的宽度 2. 当页面加载时，它使用initial-scale将缩放比设置为100%。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>优先实现移动端设计<br>使用媒体查询，按照视口从小到大的顺序渐进增强网页<br>使用<strong>流式布局</strong>（容器随视口宽度而变化）适应任意浏览器尺寸<br>使用<a href="https://jakearchibald.com/2015/anatomy-of-responsive-images/">响应式图片</a>适应移动设备的带宽限制</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 设置src属性兼容不支持srcset属性的浏览器 --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- srcset根据浏览器宽度的不同加载不同图片 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span></span></span><br><span class="line"><span class="tag">  <span class="attr">alt</span>=<span class="string">&quot;img&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">src</span>=<span class="string">&quot;bg.jpg&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">srcset</span>=<span class="string">&quot;</span></span></span><br><span class="line"><span class="string"><span class="tag">    bg-s.jpg 560w,</span></span></span><br><span class="line"><span class="string"><span class="tag">    bg-m.jpg 800w,</span></span></span><br><span class="line"><span class="string"><span class="tag">    bg-l.jpg 1280w</span></span></span><br><span class="line"><span class="string"><span class="tag">  &quot;</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="模块化CSS"><a href="#模块化CSS" class="headerlink" title="模块化CSS"></a>模块化CSS</h2><p>每个模块都需要有一个独一无二的类名，如<code>message</code>，以该类名开头创建的新类名称为修饰符，如<code>message-error</code></p>
+<p>使用统一的命名约定，比如双连字符和双下划线，以便一眼就可以看清楚模块的结构</p>
+<p>模块的命名应该有意义，同时也要避免使用简单地描述视觉效果的名称，可以从功能&#x2F;使用场景等方面思考命名</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// bad</span><br><span class="line"><span class="selector-class">.red-box</span>&#123;&#125;</span><br><span class="line"></span><br><span class="line">// good</span><br><span class="line"><span class="selector-class">.alert</span>&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>单一职责原则</strong>，模块封装的一个重要原则，每个模块应该只做一件事情</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 结合Sass等预处理器，可以用多个文件来组织样式 */</span></span><br><span class="line"><span class="keyword">@import</span> <span class="string">&#x27;base&#x27;</span>;</span><br><span class="line"><span class="keyword">@import</span> <span class="string">&#x27;message&#x27;</span>;</span><br><span class="line"><span class="keyword">@import</span> <span class="string">&#x27;button&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p><strong>工具类</strong>用来对元素做一件简单明确的事，比如让文字居中、让元素左浮动，或者清除浮动，工具类是唯一应该使用<code>important</code>注释的地方</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.hidden</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: none <span class="meta">!important</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+  </div>
+  <div class="post-footer">the end</div>
+</article>
+
+          
+  <nav class="pagination post-nav">
+    
+      <a href="/blog/2021/04/07/learn-babel/">
+        <div class="prev-post">
+          <i class="iconfont icon-back"></i>
+          <span class="truncate-text">
+            Babel 浅入浅出
+          </span>
+        </div>
+      </a>
+    
+    
+      <a href="/blog/2021/03/17/http-basics/">
+        <div class="next-post">
+          <span class="truncate-text">
+            图解 HTTP
+          </span>
+          <i class="iconfont icon-more"></i>
+        </div>
+      </a>
+    
+  </nav>
+
+
+          
+  
+    <div id="giscus_thread">
+  <h2 class="title">
+    
+      欢迎留言~
+    
+  </h2>
+  <div class="giscus"></div>
+</div>
+
+<script src="https://giscus.app/client.js"
+        data-repo="zo-ly/blog"
+        data-repo-id="MDEwOlJlcG9zaXRvcnk1OTgwNTA4Nw=="
+        data-category="Announcements"
+        data-category-id="DIC_kwDOA5CNn84Cbi50"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="0"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light_tritanopia"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+
+  
+
+
+      </main>
+    </div>
+    <footer>
+      <div class="social-links">
+        
+          
+        
+          
+        
+          
+            <a href="https://github.com/zo-ly"><i class="iconfont icon-github"></i></a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <a href="/blog/atom.xml"><i class="iconfont icon-rss"></i></a>
+          
+        
+      </div>
+      
+        <div class="quote">
+          <p>草在结它的种子，风在摇它的叶子。我们站着，不说话，就十分美好。——顾城《门前》</p>
+        </div>
+      
+      <div class="copyright">
+        <p>
+          由 <a href="https://hexo.io/">Hexo</a> 强力驱动
+          <span>|</span>
+          主题 - <a href="https://github.com/zo-ly/hexo-theme-ztopic">ztopic</a
+        </p>
+        <p>
+          <span>
+          
+          &copy;
+          
+            2016 - 2023
+          
+          </span>
+          <i class="iconfont icon-circle"></i>
+          <span>Zcc</span>
+        </p>
+      </div>
+</footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <div id="mobile-nav">
+  <nav id="mobile-nav-menu">
+    
+      <a href="/blog/" class="mobile-nav-link"><i class="iconfont icon-home"></i>首页</a>
+    
+      <a href="/blog/archives" class="mobile-nav-link"><i class="iconfont icon-archive"></i>归档</a>
+    
+      <a href="/blog/about" class="mobile-nav-link"><i class="iconfont icon-about"></i>关于</a>
+    
+      <a href="/blog/categories" class="mobile-nav-link"><i class="iconfont icon-category"></i>分类</a>
+    
+      <a href="/blog/tags" class="mobile-nav-link"><i class="iconfont icon-tags"></i>标签</a>
+    
+    <div class="mobile-intro"><i class="iconfont icon-pen"></i>practice makes perfect</div>
+  </nav>
+</div>
+
+
+  
+<script src="/blog/libs/jQuery/jquery-3.2.1.min.js"></script>
+
+  
+<script src="/blog/libs/slideout/slideout.min.js"></script>
+
+  
+    
+<link rel="stylesheet" href="/blog/libs/fancybox/jquery.fancybox.css">
+
+    
+<script src="/blog/libs/fancybox/jquery.fancybox.pack.js"></script>
+
+  
+  
+
+  
+<script src="/blog/js/ztopic.js"></script>
+
+</body>
+</html>
