@@ -13,32 +13,32 @@
 }
 h1 {
   font-size: 26px;
-  font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
 h2 {
   font-size: 24px;
-  font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
 h3 {
   font-size: 20px;
-  font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
 h4 {
   font-size: 16px;
-  font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
 h5 {
   font-size: 14px;
-  font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
 h6 {
   font-size: 14px;
-  font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
 * {
@@ -55,7 +55,7 @@ body {
 body {
   margin: 0;
   font-size: 100%;
-  font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5;
   background: #eaeaea;
   color: #34495e;
@@ -371,20 +371,23 @@ header.site-nav .navbar ul li i {
   height: 500px;
   background: #34495e;
   color: #fff;
-  text-align: center;
+  text-align: left;
 }
-.banner .show div.banner-title {
+.banner .show .banner-title {
   position: absolute;
-  left: 18%;
+  width: 100%;
+  max-width: 960px;
+  padding-left: 16px;
+  transform: translateX(-50%);
+  left: 50%;
   top: 36%;
-  margin: 0;
   font-family: "Satisfy", cursive, LiSu, sans-serif;
 }
-.banner .show div.banner-title .post-title {
+.banner .show .banner-title .post-title {
   font-size: 36px;
-  font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
-.banner .show div.banner-title .post-title .post-tags a {
+.banner .show .banner-title .post-title .post-tags a {
   display: inline-block;
   text-decoration: none;
   color: #fff;
@@ -395,11 +398,11 @@ header.site-nav .navbar ul li i {
   font-size: 12px;
   transition: all 0.3s;
 }
-.banner .show div.banner-title .post-title .post-tags a:before {
+.banner .show .banner-title .post-title .post-tags a:before {
   content: "#";
   font-size: 16px;
 }
-.banner .show div.banner-title .post-title .post-tags a:hover {
+.banner .show .banner-title .post-title .post-tags a:hover {
   background: #fff;
   color: #34495e;
 }
@@ -418,7 +421,7 @@ article#post-excerpt header a {
   display: inline-block;
   color: #34495e;
   position: relative;
-  font-weight: normal;
+  font-weight: bold;
 }
 article#post-excerpt header a::after {
   position: absolute;
@@ -470,12 +473,12 @@ article#post-excerpt .post-tags a:hover {
 }
 
 article.post {
-  border-radius: 4px;
+  border-radius: 2px;
   min-height: 400px;
-  margin: 0 auto 15px;
+  margin: 0 auto 30px;
   padding: 40px 20px 20px;
   background: #fff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 article.post a {
   color: #0099cc;
@@ -586,7 +589,7 @@ article.post #read-more a:hover {
   top: 0;
   margin-left: 960px;
   padding: 10px;
-  font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   border-radius: 2px;
   background: #fff;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
@@ -1015,7 +1018,7 @@ code {
   height: 8rem;
 }
 #valine_comments textarea {
-  font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   margin: 10px 0;
   padding: 10px;
   border: 1px solid transparent;
@@ -1319,7 +1322,7 @@ footer .copyright a:hover {
     bottom: 50px;
   }
   article#post-excerpt header h1 {
-    font-size: 22px;
+    font-size: 24px;
     margin: 0;
   }
   article#post-excerpt header .post-meta {
@@ -1329,11 +1332,11 @@ footer .copyright a:hover {
     padding: 0;
   }
   article.post {
-    padding: 10px;
+    padding: 15px 10px;
   }
   article.post .mobile-post-title > h1 {
     border-left: 3px solid #34495e;
-    margin: -10px 0 0 -10px;
+    margin: -15px 0 0 -10px;
     padding: 12px 0 12px 10px;
   }
   article.post .post-meta .post-time {
@@ -1353,7 +1356,7 @@ footer .copyright a:hover {
     padding: 3px;
   }
   article.post h1 {
-    font-size: 20px;
+    font-size: 24px;
   }
   article.post h2 {
     font-size: 18px;
