@@ -597,7 +597,7 @@ article.post .post-footer {
   margin-top: 40px;
   text-align: center;
   font-family: "Satisfy", cursive, LiSu, sans-serif;
-  color: #8d8a8a;
+  color: #8a8a8a;
 }
 article.post .post-footer:after {
   content: "";
@@ -1178,18 +1178,19 @@ footer .copyright a:hover {
 }
 .archives-container .tag-title {
   font-weight: normal;
-  font-size: 26px;
-  padding-left: 20px;
-  border-left: 2px solid #f6695f;
+  font-size: 24px;
   margin: 0 0 20px;
 }
+.archives-container .tag-title i {
+  color: #f6695f;
+}
 .archives-container .archives-wrapper {
-  padding-left: 30px;
+  padding-left: 10px;
 }
 .archives-container .archive-year {
   line-height: 1;
-  font-size: 24px;
-  margin: 10px 0 15px;
+  font-size: 26px;
+  margin: 15px 0;
   color: #34495e;
 }
 .archives-container .archive-article {
@@ -1283,6 +1284,7 @@ footer .copyright a:hover {
   color: #8a8a8a;
 }
 .category-container .category-item-name {
+  font-size: 18px;
   margin: 0 0 20px;
   font-weight: normal;
   line-height: 1;
@@ -1302,6 +1304,7 @@ footer .copyright a:hover {
   cursor: pointer;
 }
 .category-container .category-item a time {
+  font-size: 16px;
   color: #8a8a8a;
 }
 .category-container .category-item a .category-title {
