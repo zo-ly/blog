@@ -398,15 +398,22 @@ header.site-nav .navbar ul li i {
   font-size: 36px;
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
+.banner .show .banner-title .post-title .post-tags {
+  padding: 20px 0 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
 .banner .show .banner-title .post-title .post-tags a {
   display: inline-block;
   text-decoration: none;
   color: #fff;
-  margin: 10px;
   border: 1px solid #fff;
   border-radius: 2px;
   padding: 0 10px;
-  font-size: 12px;
+  font-size: 14px;
   transition: all 0.3s;
 }
 .banner .show .banner-title .post-title .post-tags a:before {
@@ -466,11 +473,15 @@ article#post-excerpt header .post-meta .post-visits {
   color: #8a8a8a;
   font-size: 14px;
 }
+article#post-excerpt .post-tags {
+  padding: 10px 5px 0;
+  margin: 0;
+  border-top: 1px dashed #eaeaea;
+}
 article#post-excerpt .post-tags a {
   display: inline-block;
   color: #34495e;
-  background: #eee;
-  margin: 10px;
+  background: #eaeaea;
   border: 1px solid #eee;
   border-radius: 2px;
   padding: 0 10px;
@@ -506,13 +517,33 @@ article.post a {
 article.post a:hover {
   color: #f6695f;
 }
+article.post ul,
+article.post ol {
+  margin: 0.8em 0;
+}
+article.post li > ol,
+article.post li > ul {
+  margin: 0 0;
+}
+article.post ul,
+article.post ol {
+  padding-left: 30px;
+}
+article.post ul:first-child,
+article.post ol:first-child {
+  margin-top: 0;
+}
+article.post ul:last-child,
+article.post ol:last-child {
+  margin-bottom: 0;
+}
 article.post blockquote {
   font: 14px/22px helvetica, sans-serif;
-  font-style: italic;
-  margin: 10px 10px 10px 20px;
-  padding: 10px 10px 10px 15px;
-  border-left: 3px solid #ccc;
-  background-color: #f1f1f1;
+  border-left: 4px solid #298efa;
+  padding: 5px 15px;
+  color: #777;
+  background-color: rgba(0, 102, 255, 0.1);
+  margin: 1em 0;
 }
 article.post .post-meta .post-time {
   font-size: 20px;
@@ -542,13 +573,17 @@ article.post img {
   padding: 5px;
 }
 article.post .post-tags {
-  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 5px 0 10px;
 }
 article.post .post-tags a {
   display: inline-block;
   text-decoration: none;
   color: #34495e;
-  margin: 5px;
   border: 1px solid #34495e;
   border-radius: 2px;
   padding: 0 5px;
@@ -581,13 +616,13 @@ article.post .post-footer:before {
   border-top-color: #8d8c8c;
 }
 article.post #read-more {
-  margin: 40px 0;
+  padding: 10px 0 20px;
   text-align: center;
 }
 article.post #read-more a {
   font-weight: normal;
   color: #34495e;
-  padding: 5px;
+  padding: 5px 20px;
   border: 1px solid #34495e;
   border-radius: 2px;
   transition: all 0.3s;
@@ -1134,17 +1169,27 @@ footer .copyright a:hover {
 }
 
 .archives-container {
-  min-height: 400px;
-  padding: 30px 40px;
+  min-height: 300px;
+  padding: 20px;
   margin-bottom: 10px;
   background: #fff;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
   border-radius: 2px;
 }
+.archives-container .tag-title {
+  font-weight: normal;
+  font-size: 26px;
+  padding-left: 20px;
+  border-left: 2px solid #f6695f;
+  margin: 0 0 20px;
+}
+.archives-container .archives-wrapper {
+  padding-left: 30px;
+}
 .archives-container .archive-year {
   line-height: 1;
-  font-size: 30px;
-  margin: 10px 10px 15px;
+  font-size: 24px;
+  margin: 10px 0 15px;
   color: #34495e;
 }
 .archives-container .archive-article {
@@ -1322,7 +1367,7 @@ footer .copyright a:hover {
     margin-bottom: 0;
   }
   article#post-excerpt .post-tags a {
-    padding: 0;
+    padding: 0 5px;
   }
   article.post {
     padding: 15px 10px;
@@ -1344,12 +1389,8 @@ footer .copyright a:hover {
   article.post .post-meta .post-time i {
     font-weight: normal;
   }
-  article.post #read-more {
-    margin: 5px 0;
-  }
   article.post #read-more a {
     font-size: 14px;
-    padding: 3px;
   }
   article.post h1 {
     font-size: 24px;
@@ -1370,14 +1411,13 @@ footer .copyright a:hover {
     font-size: 14px;
   }
   .archives-container {
-    min-height: 400px;
-    padding: 15px 20px 30px;
+    padding: 15px;
+  }
+  .archives-container .tag-title {
+    margin: 0;
   }
   .archives-container .archive-year {
-    font-size: 24px;
-    padding: 0 10px;
-    margin: 15px 0 5px 10px;
-    border-left: 2px solid #f6695f;
+    margin: 10px 0;
   }
   .archives-container .archive-article {
     padding: 5px;
@@ -1433,4 +1473,36 @@ footer .copyright a:hover {
   footer .copyright p {
     margin: 0;
   }
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 14px;
+  margin: 0 0 20px;
+  width: 100%;
+}
+
+tbody tr:nth-of-type(even) {
+  background: #fafafa;
+}
+tbody tr:hover {
+  background: #f5f5f5;
+}
+
+caption, th, td {
+  padding: 8px;
+}
+
+th, td {
+  border: 1px solid #dfe2e5;
+}
+
+th {
+  background: #f2f2f2;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+td {
+  border-bottom-width: 1px;
 }
