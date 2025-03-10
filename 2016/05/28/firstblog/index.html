@@ -143,7 +143,10 @@
 <li>与Github建立联系，检查电脑中是否已有SSH keys，生成SSH keys，在Github中添加SSH key</li>
 <li>安装Hexo（安装之前，应该已经安装了Git和Node.js）</li>
 <li>使用Hexo建站，选择一个文件夹（如：E：\Hexo），此文件夹即日后的本地博客仓库。右键Git Bash，输入hexo init，此指令完成后，接着输入npm install，安装依赖包。这样本地Hexo博客就搭建好了，可以执行以下命令<code>hexo generate</code>（编译）、<code>hexo server -p 5000</code>（本地访问 在端口5000），在浏览器输入localhost:5000查看雏形。（注：此处可以输入<code>hexo server</code>在localhost:4000查看即可，但是我不知道我的端口什么原因，所以我只能在p 5000上查看）</li>
-<li>将博客部署到Github上，在站点文件夹下右键git bash输入 <code>vim _config.yml</code>进行修改:<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">     <span class="built_in">type</span>: git</span><br><span class="line">     repo: https://github.com/username/username.github.io.git</span><br><span class="line">     branch: master</span><br></pre></td></tr></table></figure></li>
+<li>将博客部署到Github上，在站点文件夹下右键git bash输入 <code>vim _config.yml</code>进行修改:</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">     <span class="built_in">type</span>: git</span><br><span class="line">     repo: https://github.com/username/username.github.io.git</span><br><span class="line">     branch: master</span><br></pre></td></tr></table></figure>
+<ol start="7">
 <li>为了能够使Hexo部署到Github上，需要安装一个插件，git bash输入<code>npm install hexo-deployer-git --save</code>，<br>然后再输入 <code>hexo g</code>（编译）、<code>hexo d</code>（提交到github）即可完成。在浏览器输入：username.github.io就可以进行浏览了，开心，吼吼</li>
 <li>选择hexo主题，修改主题，我选择的是next主题，这个主题有很详细的<a href="http://theme-next.iissnan.com/">说明</a>，按照说明配置就行，这里说明一下，在配置侧边栏社交链接的图标是<a href="http://www.yeahzan.com/fa/facss.html">font awesome</a>（第一次知道有这种东西存在 (⊙﹏⊙)b），不必带 fa-前缀</li>
 </ol>
@@ -225,7 +228,7 @@
           
           &copy;
           
-            2016 - 2024
+            2016 - 2025
           
           </span>
           <i class="iconfont icon-circle"></i>
