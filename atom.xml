@@ -9,7 +9,7 @@
   <link href="https://blog.zoly.cc/atom.xml" rel="self"/>
   <rights>All rights reserved 2026, Zoly</rights>
   <title>Zoly's blog</title>
-  <updated>2026-03-16T16:13:26.729Z</updated>
+  <updated>2026-03-17T11:28:45.514Z</updated>
   <entry>
     <author>
       <name>Zoly</name>
@@ -25,7 +25,7 @@
     <published>2022-02-10T10:16:48.000Z</published>
     <summary>oh-my-zsh 配置 自用</summary>
     <title>oh-my-zsh 配置</title>
-    <updated>2026-03-16T16:13:26.729Z</updated>
+    <updated>2026-03-17T11:28:45.514Z</updated>
   </entry>
   <entry>
     <author>
@@ -41,7 +41,7 @@
     <published>2022-02-09T16:31:48.000Z</published>
     <summary>vim 小结 熟能生巧吧</summary>
     <title>vim tutor</title>
-    <updated>2026-03-16T16:13:26.729Z</updated>
+    <updated>2026-03-17T11:28:45.514Z</updated>
   </entry>
   <entry>
     <author>
@@ -57,7 +57,7 @@
     <published>2021-04-07T14:43:48.000Z</published>
     <summary>过了一下文档，做了一点总结</summary>
     <title>Babel 浅入浅出</title>
-    <updated>2026-03-16T16:13:26.729Z</updated>
+    <updated>2026-03-17T11:28:45.514Z</updated>
   </entry>
   <entry>
     <author>
@@ -73,7 +73,7 @@
     <published>2021-04-07T02:33:48.000Z</published>
     <summary>略读了一些章节</summary>
     <title>CSS in Depth</title>
-    <updated>2026-03-16T16:13:26.729Z</updated>
+    <updated>2026-03-17T11:28:45.514Z</updated>
   </entry>
   <entry>
     <author>
@@ -89,7 +89,7 @@
     <published>2021-03-17T15:37:48.000Z</published>
     <summary>网络基础</summary>
     <title>图解 HTTP</title>
-    <updated>2026-03-16T16:13:26.729Z</updated>
+    <updated>2026-03-17T11:28:45.514Z</updated>
   </entry>
   <entry>
     <author>
@@ -106,7 +106,7 @@
     <published>2020-08-10T02:33:48.000Z</published>
     <summary>一些摘要，方便回顾</summary>
     <title>函数式编程入门经典</title>
-    <updated>2026-03-16T16:13:26.729Z</updated>
+    <updated>2026-03-17T11:28:45.514Z</updated>
   </entry>
   <entry>
     <author>
@@ -126,7 +126,7 @@
 <p>关于双飞翼布局和圣杯布局，先看两个布局的DOM文档</p>]]>
     </summary>
     <title>关于CSS的常用布局</title>
-    <updated>2026-03-16T16:13:26.729Z</updated>
+    <updated>2026-03-17T11:28:45.514Z</updated>
   </entry>
   <entry>
     <author>
@@ -148,7 +148,7 @@
 <h3 id="关于next主题"><a href="#关于next主题" class="headerlink" title="关于next主题"></a>关于next主题</h3><p><a href="https://github.com/iissnan/hexo-theme-next">NEXT主题</a><br>在使用next主题期间，我尝试更改了几个自己不太满意的地方</p>]]>
     </summary>
     <title>hexo主题的更换及修改</title>
-    <updated>2026-03-16T16:13:26.729Z</updated>
+    <updated>2026-03-17T11:28:45.514Z</updated>
   </entry>
   <entry>
     <author>
@@ -170,6 +170,6 @@
 <h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><p>这几天因为看网易公开课<a href="http://open.163.com/movie/2010/9/J/J/M7S6PN5ED_M7S94TUJJ.html">构建动态网站</a>，萌生了自己搭建个独立博客的想法，搭建博客期间还是遇到了不少细节方面的问题，过程并没有想象中的那么简单。前辈们写的博客是个好东西，有不少的模板可以借鉴，但是呢还是遇到了一些坑，花了不少时间。搭建过程中发现自己和同为大学生的他们差距挺大的，还有不少要学，不过当看到自己的博客可以访问的时候心里还是挺激动的 ^o^&#x2F;。</p>]]>
     </summary>
     <title>GitHub Pages + Hexo 搭建个人博客</title>
-    <updated>2026-03-16T16:13:26.729Z</updated>
+    <updated>2026-03-17T11:28:45.514Z</updated>
   </entry>
 </feed>
