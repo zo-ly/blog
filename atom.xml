@@ -9,7 +9,7 @@
   <link href="https://blog.zoly.cc/atom.xml" rel="self"/>
   <rights>All rights reserved 2026, Zoly</rights>
   <title>Zoly's blog</title>
-  <updated>2026-03-17T11:28:45.514Z</updated>
+  <updated>2026-05-07T01:14:38.900Z</updated>
   <entry>
     <author>
       <name>Zoly</name>
@@ -25,7 +25,7 @@
     <published>2022-02-10T10:16:48.000Z</published>
     <summary>oh-my-zsh 配置 自用</summary>
     <title>oh-my-zsh 配置</title>
-    <updated>2026-03-17T11:28:45.514Z</updated>
+    <updated>2026-05-07T01:14:38.900Z</updated>
   </entry>
   <entry>
     <author>
@@ -41,7 +41,7 @@
     <published>2022-02-09T16:31:48.000Z</published>
     <summary>vim 小结 熟能生巧吧</summary>
     <title>vim tutor</title>
-    <updated>2026-03-17T11:28:45.514Z</updated>
+    <updated>2026-05-07T01:14:38.900Z</updated>
   </entry>
   <entry>
     <author>
@@ -57,7 +57,7 @@
     <published>2021-04-07T14:43:48.000Z</published>
     <summary>过了一下文档，做了一点总结</summary>
     <title>Babel 浅入浅出</title>
-    <updated>2026-03-17T11:28:45.514Z</updated>
+    <updated>2026-05-07T01:14:38.900Z</updated>
   </entry>
   <entry>
     <author>
@@ -66,14 +66,14 @@
     <category term="学习笔记" scheme="https://blog.zoly.cc/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <category term="CSS" scheme="https://blog.zoly.cc/tags/CSS/"/>
     <content>
-      <![CDATA[<h2 id="相对单位"><a href="#相对单位" class="headerlink" title="相对单位"></a>相对单位</h2><p>像素(px)是绝对单位，即 5px 放哪都一样大<br>不常用的绝对单位是mm（毫米）、cm（厘米）、in（英寸）、pt（点，印刷术语，1&#x2F;72英寸）、pc（派卡，印刷术语，12点）<br>这些单位都可以通过公式互相换算：1in &#x3D; 25.4mm &#x3D; 2.54cm &#x3D; 6pc &#x3D; 72pt &#x3D; 96px</p><p>CSS单位会根据浏览器、操作系统或者硬件适当缩放<br>像素是一个具有误导性的名称，CSS像素并不严格等于显示器的像素</p><p>em 和 rem 是相对单位，它们会根据作用到的元素而变化</p><p>当智能手机出现后，开发人员再也无法假装每个用户访问网站的体验都能一样(lll￢ω￢)</p><p>建议用rem设置字号，但是有选择地用em实现网页组件的简单缩放</p><p>结合伪类 <code>:root</code> 以及 rem &#x2F; vw，不用媒体查询也能让整个网页响应式缩放</p><span id="more"></span><h2 id="理解浮动"><a href="#理解浮动" class="headerlink" title="理解浮动"></a>理解浮动</h2><p>flexbox的行为很直观，可预测性更好，浮动的学习显得有些没有必要，除非在开发中需要兼容IE系浏览器(IE10 支持部分lexbox属性)或者维护旧代码库。</p><p>让文字围绕图片的效果，浮动仍然是唯一的办法，这恰恰也是浮动的设计初衷。</p><h2 id="Flexbox"><a href="#Flexbox" class="headerlink" title="Flexbox"></a>Flexbox</h2><p>Flexible Box Layout</p><p>一行多列的布局情况下，考虑到内容加载，浏览器会重新计算每个弹性子元素的大小，用户会短暂的看到不符合预期的布局，所以整页布局一行多列的时候不推荐使用flexbox</p><p>flexbox比border-radius属性的支持范围更广（大雾</p><p>如果是行内元素，那么它给父元素贡献的高度会根据line-height计算，而不是根据padding和内容</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">flex</span>: <span class="number">1</span>;</span><br><span class="line"><span class="comment">/* 推荐使用简写属性 flex，flex简写会给其他子属性提供默认值</span></span><br><span class="line"><span class="comment">flex-grow: 1;</span></span><br><span class="line"><span class="comment">flex-shrink: 1;</span></span><br><span class="line"><span class="comment">flex-basis: 0%;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure><p>flex-basis 的初始值是auto，如果设置了width值，则使用该值做为flex-basis，否则用元素内容自身的大小；如果flex-basis不是auto，则width属性会被忽略</p><p>flex-grow 是将容器多出来的留白分配给子元素的属性，值为非负整数，为 0 则弹性子元素的宽度不会超过flex-basis的值，非 0 则按照设置的值的比例进行分配</p><p>flex-shrink 是处理溢出宽度的属性，值为非负整数，为 0 则表示不收缩，非 0 则表示按照设置得值的比例收缩，值越大收缩得越多</p><p><a href="https://github.com/philipwalton/flexbugs">Flexbugs</a> 该项目维护了所有已知的flexbox的浏览器兼容性问题，并在大部分情况下给出了解决方案</p><h2 id="响应式设计"><a href="#响应式设计" class="headerlink" title="响应式设计"></a>响应式设计</h2><p>给视口添加 <a href="https://developer.mozilla.org/zh-CN/docs/Mobile/Viewport_meta_tag">meta标签</a><br>meta 标签的 content 属性里包含两个选项 1. 它告诉浏览器当解析CSS时将设备的宽度作为假定宽度，而不是一个全屏的桌面浏览器的宽度 2. 当页面加载时，它使用initial-scale将缩放比设置为100%。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure><p>优先实现移动端设计<br>使用媒体查询，按照视口从小到大的顺序渐进增强网页<br>使用<strong>流式布局</strong>（容器随视口宽度而变化）适应任意浏览器尺寸<br>使用<a href="https://jakearchibald.com/2015/anatomy-of-responsive-images/">响应式图片</a>适应移动设备的带宽限制</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"><!-- 设置src属性兼容不支持srcset属性的浏览器 --></span></span><br><span class="line"><span class="comment"><!-- srcset根据浏览器宽度的不同加载不同图片 --></span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span></span></span><br><span class="line"><span class="tag">  <span class="attr">alt</span>=<span class="string">&quot;img&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">src</span>=<span class="string">&quot;bg.jpg&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">srcset</span>=<span class="string">&quot;</span></span></span><br><span class="line"><span class="string"><span class="tag">    bg-s.jpg 560w,</span></span></span><br><span class="line"><span class="string"><span class="tag">    bg-m.jpg 800w,</span></span></span><br><span class="line"><span class="string"><span class="tag">    bg-l.jpg 1280w</span></span></span><br><span class="line"><span class="string"><span class="tag">  &quot;</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br></pre></td></tr></table></figure><h2 id="模块化CSS"><a href="#模块化CSS" class="headerlink" title="模块化CSS"></a>模块化CSS</h2><p>每个模块都需要有一个独一无二的类名，如<code>message</code>，以该类名开头创建的新类名称为修饰符，如<code>message-error</code></p><p>使用统一的命名约定，比如双连字符和双下划线，以便一眼就可以看清楚模块的结构</p><p>模块的命名应该有意义，同时也要避免使用简单地描述视觉效果的名称，可以从功能&#x2F;使用场景等方面思考命名</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// bad</span><br><span class="line"><span class="selector-class">.red-box</span>&#123;&#125;</span><br><span class="line"></span><br><span class="line">// good</span><br><span class="line"><span class="selector-class">.alert</span>&#123;&#125;</span><br></pre></td></tr></table></figure><p><strong>单一职责原则</strong>，模块封装的一个重要原则，每个模块应该只做一件事情</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 结合Sass等预处理器，可以用多个文件来组织样式 */</span></span><br><span class="line"><span class="keyword">@import</span> <span class="string">&#x27;base&#x27;</span>;</span><br><span class="line"><span class="keyword">@import</span> <span class="string">&#x27;message&#x27;</span>;</span><br><span class="line"><span class="keyword">@import</span> <span class="string">&#x27;button&#x27;</span>;</span><br></pre></td></tr></table></figure><p><strong>工具类</strong>用来对元素做一件简单明确的事，比如让文字居中、让元素左浮动，或者清除浮动，工具类是唯一应该使用<code>important</code>注释的地方</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.hidden</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: none <span class="meta">!important</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]>
+      <![CDATA[<h2 id="相对单位"><a href="#相对单位" class="headerlink" title="相对单位"></a>相对单位</h2><p>像素(px)是绝对单位，即 5px 放哪都一样大<br>不常用的绝对单位是mm（毫米）、cm（厘米）、in（英寸）、pt（点，印刷术语，1&#x2F;72英寸）、pc（派卡，印刷术语，12点）<br>这些单位都可以通过公式互相换算：1in &#x3D; 25.4mm &#x3D; 2.54cm &#x3D; 6pc &#x3D; 72pt &#x3D; 96px</p><p>CSS单位会根据浏览器、操作系统或者硬件适当缩放<br>像素是一个具有误导性的名称，CSS像素并不严格等于显示器的像素</p><p>em 和 rem 是相对单位，它们会根据作用到的元素而变化</p><p>当智能手机出现后，开发人员再也无法假装每个用户访问网站的体验都能一样(lll￢ω￢)</p><p>建议用rem设置字号，但是有选择地用em实现网页组件的简单缩放</p><p>结合伪类 <code>:root</code> 以及 rem &#x2F; vw，不用媒体查询也能让整个网页响应式缩放</p><span id="more"></span><h2 id="理解浮动"><a href="#理解浮动" class="headerlink" title="理解浮动"></a>理解浮动</h2><p>flexbox的行为很直观，可预测性更好，浮动的学习显得有些没有必要，除非在开发中需要兼容IE系浏览器(IE10 支持部分lexbox属性)或者维护旧代码库。</p><p>让文字围绕图片的效果，浮动仍然是唯一的办法，这恰恰也是浮动的设计初衷。</p><h2 id="Flexbox"><a href="#Flexbox" class="headerlink" title="Flexbox"></a>Flexbox</h2><p>Flexible Box Layout</p><p>一行多列的布局情况下，考虑到内容加载，浏览器会重新计算每个弹性子元素的大小，用户会短暂的看到不符合预期的布局，所以整页布局一行多列的时候不推荐使用flexbox</p><p>flexbox比border-radius属性的支持范围更广（大雾</p><p>如果是行内元素，那么它给父元素贡献的高度会根据line-height计算，而不是根据padding和内容</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">flex</span>: <span class="number">1</span>;</span><br><span class="line"><span class="comment">/* 推荐使用简写属性 flex，flex简写会给其他子属性提供默认值</span></span><br><span class="line"><span class="comment">flex-grow: 1;</span></span><br><span class="line"><span class="comment">flex-shrink: 1;</span></span><br><span class="line"><span class="comment">flex-basis: 0%;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure><p>flex-basis 的初始值是auto，如果设置了width值，则使用该值做为flex-basis，否则用元素内容自身的大小；如果flex-basis不是auto，则width属性会被忽略</p><p>flex-grow 是将容器多出来的留白分配给子元素的属性，值为非负整数，为 0 则弹性子元素的宽度不会超过flex-basis的值，非 0 则按照设置的值的比例进行分配</p><p>flex-shrink 是处理溢出宽度的属性，值为非负整数，为 0 则表示不收缩，非 0 则表示按照设置得值的比例收缩，值越大收缩得越多</p><p><a href="https://github.com/philipwalton/flexbugs">Flexbugs</a> 该项目维护了所有已知的flexbox的浏览器兼容性问题，并在大部分情况下给出了解决方案</p><h2 id="响应式设计"><a href="#响应式设计" class="headerlink" title="响应式设计"></a>响应式设计</h2><p>给视口添加 <a href="https://developer.mozilla.org/zh-CN/docs/Mobile/Viewport_meta_tag">meta标签</a><br>meta 标签的 content 属性里包含两个选项 1. 它告诉浏览器当解析CSS时将设备的宽度作为假定宽度，而不是一个全屏的桌面浏览器的宽度 2. 当页面加载时，它使用initial-scale将缩放比设置为100%。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure><p>优先实现移动端设计<br>使用媒体查询，按照视口从小到大的顺序渐进增强网页<br>使用<strong>流式布局</strong>（容器随视口宽度而变化）适应任意浏览器尺寸<br>使用<a href="https://jakearchibald.com/2015/anatomy-of-responsive-images/">响应式图片</a>适应移动设备的带宽限制</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 设置src属性兼容不支持srcset属性的浏览器 --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- srcset根据浏览器宽度的不同加载不同图片 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span></span></span><br><span class="line"><span class="tag">  <span class="attr">alt</span>=<span class="string">&quot;img&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">src</span>=<span class="string">&quot;bg.jpg&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">srcset</span>=<span class="string">&quot;</span></span></span><br><span class="line"><span class="string"><span class="tag">    bg-s.jpg 560w,</span></span></span><br><span class="line"><span class="string"><span class="tag">    bg-m.jpg 800w,</span></span></span><br><span class="line"><span class="string"><span class="tag">    bg-l.jpg 1280w</span></span></span><br><span class="line"><span class="string"><span class="tag">  &quot;</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br></pre></td></tr></table></figure><h2 id="模块化CSS"><a href="#模块化CSS" class="headerlink" title="模块化CSS"></a>模块化CSS</h2><p>每个模块都需要有一个独一无二的类名，如<code>message</code>，以该类名开头创建的新类名称为修饰符，如<code>message-error</code></p><p>使用统一的命名约定，比如双连字符和双下划线，以便一眼就可以看清楚模块的结构</p><p>模块的命名应该有意义，同时也要避免使用简单地描述视觉效果的名称，可以从功能&#x2F;使用场景等方面思考命名</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// bad</span><br><span class="line"><span class="selector-class">.red-box</span>&#123;&#125;</span><br><span class="line"></span><br><span class="line">// good</span><br><span class="line"><span class="selector-class">.alert</span>&#123;&#125;</span><br></pre></td></tr></table></figure><p><strong>单一职责原则</strong>，模块封装的一个重要原则，每个模块应该只做一件事情</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 结合Sass等预处理器，可以用多个文件来组织样式 */</span></span><br><span class="line"><span class="keyword">@import</span> <span class="string">&#x27;base&#x27;</span>;</span><br><span class="line"><span class="keyword">@import</span> <span class="string">&#x27;message&#x27;</span>;</span><br><span class="line"><span class="keyword">@import</span> <span class="string">&#x27;button&#x27;</span>;</span><br></pre></td></tr></table></figure><p><strong>工具类</strong>用来对元素做一件简单明确的事，比如让文字居中、让元素左浮动，或者清除浮动，工具类是唯一应该使用<code>important</code>注释的地方</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.hidden</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: none <span class="meta">!important</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]>
     </content>
     <id>https://blog.zoly.cc/2021/04/07/css-in-depth/</id>
     <link href="https://blog.zoly.cc/2021/04/07/css-in-depth/"/>
     <published>2021-04-07T02:33:48.000Z</published>
     <summary>略读了一些章节</summary>
     <title>CSS in Depth</title>
-    <updated>2026-03-17T11:28:45.514Z</updated>
+    <updated>2026-05-07T01:14:38.900Z</updated>
   </entry>
   <entry>
     <author>
@@ -89,7 +89,7 @@
     <published>2021-03-17T15:37:48.000Z</published>
     <summary>网络基础</summary>
     <title>图解 HTTP</title>
-    <updated>2026-03-17T11:28:45.514Z</updated>
+    <updated>2026-05-07T01:14:38.900Z</updated>
   </entry>
   <entry>
     <author>
@@ -106,7 +106,7 @@
     <published>2020-08-10T02:33:48.000Z</published>
     <summary>一些摘要，方便回顾</summary>
     <title>函数式编程入门经典</title>
-    <updated>2026-03-17T11:28:45.514Z</updated>
+    <updated>2026-05-07T01:14:38.900Z</updated>
   </entry>
   <entry>
     <author>
@@ -126,7 +126,7 @@
 <p>关于双飞翼布局和圣杯布局，先看两个布局的DOM文档</p>]]>
     </summary>
     <title>关于CSS的常用布局</title>
-    <updated>2026-03-17T11:28:45.514Z</updated>
+    <updated>2026-05-07T01:14:38.900Z</updated>
   </entry>
   <entry>
     <author>
@@ -148,16 +148,16 @@
 <h3 id="关于next主题"><a href="#关于next主题" class="headerlink" title="关于next主题"></a>关于next主题</h3><p><a href="https://github.com/iissnan/hexo-theme-next">NEXT主题</a><br>在使用next主题期间，我尝试更改了几个自己不太满意的地方</p>]]>
     </summary>
     <title>hexo主题的更换及修改</title>
-    <updated>2026-03-17T11:28:45.514Z</updated>
+    <updated>2026-05-07T01:14:38.900Z</updated>
   </entry>
   <entry>
     <author>
       <name>Zoly</name>
     </author>
     <category term="博客搭建" scheme="https://blog.zoly.cc/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    <category term="GitHub Pages" scheme="https://blog.zoly.cc/tags/GitHub-Pages/"/>
     <category term="Hexo" scheme="https://blog.zoly.cc/tags/Hexo/"/>
     <category term="blog" scheme="https://blog.zoly.cc/tags/blog/"/>
-    <category term="GitHub Pages" scheme="https://blog.zoly.cc/tags/GitHub-Pages/"/>
     <category term="静态独立博客" scheme="https://blog.zoly.cc/tags/%E9%9D%99%E6%80%81%E7%8B%AC%E7%AB%8B%E5%8D%9A%E5%AE%A2/"/>
     <content>
       <![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>一开始，我以为必须购买一个独立域名才可以进行博客的搭建（╯︿╰﹀ ，所以在狗爹上<strong>斥巨资</strong>(╯▔︵▔)╯ 购买了域名，后来在搭建过程中发现可以单纯利用Github pages就可以搭建自己的独立博客了T_T唉…..不过有个独立域名也挺好的。</p><h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><p>这几天因为看网易公开课<a href="http://open.163.com/movie/2010/9/J/J/M7S6PN5ED_M7S94TUJJ.html">构建动态网站</a>，萌生了自己搭建个独立博客的想法，搭建博客期间还是遇到了不少细节方面的问题，过程并没有想象中的那么简单。前辈们写的博客是个好东西，有不少的模板可以借鉴，但是呢还是遇到了一些坑，花了不少时间。搭建过程中发现自己和同为大学生的他们差距挺大的，还有不少要学，不过当看到自己的博客可以访问的时候心里还是挺激动的 ^o^&#x2F;。</p><span id="more"></span><h3 id="总结一下如何搭建个人博客"><a href="#总结一下如何搭建个人博客" class="headerlink" title="总结一下如何搭建个人博客"></a>总结一下如何搭建个人博客</h3><h4 id="如果要使用使用额外独立域名"><a href="#如果要使用使用额外独立域名" class="headerlink" title="如果要使用使用额外独立域名"></a>如果要使用使用额外独立域名</h4><ul><li>去go daddy购买，支持支付宝，而且网上有不少优惠码</li><li>购买成功后，更改godaddy的nameservers为DNSpod的nameservers，将nameservers更改为F1G1NS1.DNSPOD.NET和F1G1NS2.DNSPOD.NET</li><li>将独立域名与github pages的空间绑定，使用NDSpod，注册DNSpod，添加域名，其中两条A记录指向github pages提供的ip：·192.30.252.153和 ·192.30.252.154</li></ul><h4 id="单纯利用Github-pages搭建自己的独立博客"><a href="#单纯利用Github-pages搭建自己的独立博客" class="headerlink" title="单纯利用Github pages搭建自己的独立博客"></a>单纯利用Github pages搭建自己的独立博客</h4><ol><li>在GitHub创建个人仓库，命名为username.github.io（username是你的账号名）</li><li>安装Node.js和Git，Git是一个版本控制工具，而GitHub是类似于远程仓库，用于存放Git管理的各种项目</li><li>与Github建立联系，检查电脑中是否已有SSH keys，生成SSH keys，在Github中添加SSH key</li><li>安装Hexo（安装之前，应该已经安装了Git和Node.js）</li><li>使用Hexo建站，选择一个文件夹（如：E：\Hexo），此文件夹即日后的本地博客仓库。右键Git Bash，输入hexo init，此指令完成后，接着输入npm install，安装依赖包。这样本地Hexo博客就搭建好了，可以执行以下命令<code>hexo generate</code>（编译）、<code>hexo server -p 5000</code>（本地访问 在端口5000），在浏览器输入localhost:5000查看雏形。（注：此处可以输入<code>hexo server</code>在localhost:4000查看即可，但是我不知道我的端口什么原因，所以我只能在p 5000上查看）</li><li>将博客部署到Github上，在站点文件夹下右键git bash输入 <code>vim _config.yml</code>进行修改:</li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">     <span class="built_in">type</span>: git</span><br><span class="line">     repo: https://github.com/username/username.github.io.git</span><br><span class="line">     branch: master</span><br></pre></td></tr></table></figure><ol start="7"><li>为了能够使Hexo部署到Github上，需要安装一个插件，git bash输入<code>npm install hexo-deployer-git --save</code>，<br>然后再输入 <code>hexo g</code>（编译）、<code>hexo d</code>（提交到github）即可完成。在浏览器输入：username.github.io就可以进行浏览了，开心，吼吼</li><li>选择hexo主题，修改主题，我选择的是next主题，这个主题有很详细的<a href="http://theme-next.iissnan.com/">说明</a>，按照说明配置就行，这里说明一下，在配置侧边栏社交链接的图标是<a href="http://www.yeahzan.com/fa/facss.html">font awesome</a>（第一次知道有这种东西存在 (⊙﹏⊙)b），不必带 fa-前缀</li></ol><p><em>独立博客搭建完成</em></p><h3 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h3><p>有了自己的博客，希望也能坚持学下去</p><p>嗯</p>]]>
@@ -170,6 +170,6 @@
 <h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><p>这几天因为看网易公开课<a href="http://open.163.com/movie/2010/9/J/J/M7S6PN5ED_M7S94TUJJ.html">构建动态网站</a>，萌生了自己搭建个独立博客的想法，搭建博客期间还是遇到了不少细节方面的问题，过程并没有想象中的那么简单。前辈们写的博客是个好东西，有不少的模板可以借鉴，但是呢还是遇到了一些坑，花了不少时间。搭建过程中发现自己和同为大学生的他们差距挺大的，还有不少要学，不过当看到自己的博客可以访问的时候心里还是挺激动的 ^o^&#x2F;。</p>]]>
     </summary>
     <title>GitHub Pages + Hexo 搭建个人博客</title>
-    <updated>2026-03-17T11:28:45.514Z</updated>
+    <updated>2026-05-07T01:14:38.900Z</updated>
   </entry>
 </feed>
